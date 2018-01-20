@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***************** FIN RESET *******************/
+
+#contener{
+    width: 1000px;
+	margin: auto;
+}
+.mainMenu{
+	position:fixed;
+	top:0;
+	width:1000px;
+	margin:0;
+	padding:0;
+    margin-top: 20px;
+}
+
+.menu{
+    display: flex;
+    padding: 0 70px 0 300px;
+    flex-direction: row;
+	max-height:0px;
+	overflow-y:hidden;
+	text-align:right;
+    margin-top: -30px;
+}
+.menu li{
+	width: 100%;
+}
+.menu li:hover{
+	cursor:pointer;
+}
+.menu a{
+	color:black;
+	text-decoration:none;
+	display:block;
+}
+.menu a:hover{
+	color:yellow;
+}
+label.menuTitle{
+	display:block;
+	font-size:20px;
+	text-align:right;
+	height:40px;
+	margin-right:1%;
+	width:30px;
+	font-weight:bold;
+	cursor:pointer;
+	background:url(img/menu.png) 97% 10px no-repeat;
+	background-size:24px 19px;
+    float:right;
+	
+}
+.hidden{
+	display:none;
+}
+input[name="panel"]:checked ~ .menu{
+	max-height:800px;
+    transition:2s;
+}
+.clear{
+	clear:both;
+}
+
+
+/***************** HEADER *******************/
+
+header{
+    margin-top: 70px;
+	height:400px;
+    background: gray;
+}
+
+/***************** MAIN INDEX *******************/
+
+
+.sectionHome{
+    height: 300px;
+}
+.portrait{
+	width:25%;
+	background:orange;
+    margin-top: 100px;
+    float: left;
+	height:100px;
+}
+.accroche{
+    width:75%;
+	background:yellow;
+    margin-top: 100px;
+    float: left;
+	height:100px;
+}
+.histoire{
+    width:75%;
+	background:red;
+    float: left;
+	height:100px;
+}
+.pointsForts{
+    width:25%;
+	background:purple;
+    float: left;
+	height:100px;
+}
+
+footer{
+	padding:15px;
+}
+.filetFooter{
+    margin-top: 100px;
+}
+.texteFooter{
+    text-align: center;
+}
+.clear{
+	clear:both;
+}
+
+
+/********************* PORTFOLIO ******************/
+.rondJaune{
+    width: 15%;
+    height: 15%;
+    margin: 0;
+}
+
+#menuPortfolio{
+    width: 1000px;
+    height: 100px;
+    text-align:center;
+}
+#menuPortfolio a{ 
+    display: inline-block;
+    position:relative;
+    width: 20%;
+    color:black;
+	text-decoration:none;
+}
+#menuPortfolio a:hover{ 
+    cursor:pointer;
+    font-size: 130%;
+    font-weight: bold;
+}
+#menuPortfolio a:first-child{ 
+    position: absolute;
+    width: 100px;
+} 
+
+#menuPortfolio a:before{
+	content:attr(title);
+	position:absolute;
+	border:solid;
+	color:white;
+	display:block;
+	width:160px;
+	text-align:center;
+	background:rgba(0,0,0,0.3);
+}
+
+
+
+
+
+/*
+.navPortfolio{
+    position:fixed;
+	margin:10px 0 20px 0;
+	width:100%;
+
+}
+.menuPortfolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: -80px; 
+}
+
+.menuPortfolio a{
+	color:black;
+	text-decoration:none;
+    border-radius: 80px;
+}
+.menuPortfolio li:hover{
+	cursor:pointer;
+}
+.menuPortfolio a:hover{
+	color:yellow;
+    background: gray;
+}
+   
+.rondJaune{
+    width: 15%;
+    height: 15%;
+}
+/*
+
+/*
+.rondJaune{
+    position: relative;
+    background: url(../img/rond_jaune.png) no-repeat;
+    background: red;
+    padding: 50px;
+}
+/*
+
+/***************** MAIN PORTFOLIO *******************/
+
+.sectionPortfolio{
+    
+    height: 1000px;
+   /* background: gray; */
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+}
+.filetHoriz{
+    flex-direction: row;
+    margin: 50px 0;
+}
+.portfolioWeb{
+    display: flex;
+    flex-wrap: wrap;
+    background: pink;
+    margin-bottom: 50px;
+}
+.portfolioEdition{
+    display: flex;
+    flex-wrap: wrap;
+    background: pink;
+    margin-bottom: 50px;
+}
+.portfolioIdentite{
+    display: flex;
+    flex-wrap: wrap;
+    background: pink;
+    margin-bottom: 50px;
+}
+.portfolioMatte{
+    display: flex;
+    flex-wrap: wrap;
+    background: pink;
+    margin-bottom: 50px;
+}
+.visuelsPortfolio{
+    width: 25%;
+    height: 200px;
+    background: orange;
+    margin: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
