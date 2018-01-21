@@ -120,6 +120,8 @@ p{
 .menu a:hover{
 	color: #ffff33;
     background: #3c3939;
+    padding-top: 3px;
+    padding-bottom: 1px;
 }
 label.menuTitle{
 	display:block;
