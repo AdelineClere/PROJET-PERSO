@@ -132,7 +132,7 @@ label.menuTitle{
 	width:30px;
 	font-weight:bold;
 	cursor:pointer;
-	background:url(img/menu.png) 97% 10px no-repeat;
+	background:url(../img/menu.png) 97% 10px no-repeat;
 	background-size:24px 19px;
     float:right;
 	
