@@ -1,76 +1,134 @@
-<!Doctype html>
-<html>
-	<head>
-		<title>Projet perso</title><!-- Titre de la page -->
-        <link rel="icon" sizes="64x64rgba" href="img/fee-fav.png" type="image/png">
-        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-        <link rel="icon" sizes="32x32" href="img/fee-favicon-48.png" type="image/png"> <!-- Favicon -->
-		<link rel="stylesheet" href="css/projet-perso.css"><!-- Lien vers mon fichier CSS -->
-		<meta name="description" content="Projet perso"><!-- Description de la page -->
-		<meta charset="UTF-8"><!-- Encodage -->
-		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Cette ligne est obligatoire pour faire ses tests smartphone en ligne -->
-	</head>
-    
-	<body>        
-		<div id="contener">
-            
-            <section id="top">
-                <a href="index.html"><img src="img/fee.jpg" alt="logo" class="logo"></a>
-            </section>
-            
-            <nav class="mainMenu">
-            <input type="checkbox" name="panel" class="hidden" id="panel">
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Encodage de la page pour les accents -->
+        <meta charset="UTF-8">
+        
+        <!-- Titre de la page -->
+        <title>My Web Wf3</title>
+        
+        <!-- Description de la page -->
+        <meta name="description" content="Projet perso">
 
-            <label for="panel" class="menuTitle"></label><div class="clear"></div>
-                <ul class="menu" >
+        <!-- Pour Internet Explorer : S'assurer qu'il utilise la dernière version du moteur de rendu -->
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        
+        <!-- Affichage sans zoom sur les mobiles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- favicon -->
+        <link rel="icon" sizes="48x48" href="assets/img/fee-favicon-48.png" type="image/png">
+
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- FontAwesome CSS -->
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="assets/css/projet-perso.css">
+        
+        <!-- HTML 5 Shiv -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        
+        <!-- Menu du Haut : Navigation Bootstrap -->
+        <nav class="navbar navbar-mainMenu">
+            <div class="container">
+            <div class="navbar-header">
+            
+            <!-- Gestion du Menu Burger : Version Mobile -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+
+                <!-- La fée -->
+                <a class="navbar-brand"  href="index.html">
+                <img src="assets/img/fee.jpg" alt="logo-fée" class="logo" aria-hidden="true">
+                </a>
+            </div>
+            
+            <!-- Le Menu -->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
                     <li><a href="index.html">Ma pomme</a></li>
                     <li><a href="projet-perso-portfolio.html">Portfolio</a></li>
                     <li><a href="#">Mon œil</a></li>
                     <li><a href="#">Des mots</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
-   
-			<header>
-              <img src="img/header.png" alt="Profil Adeline Clère" title="adelineClere"> 
-			</header>
-        
-        <div id="contener">
-            <main>
-                <h1 class="accroche">Des prestations sur-mesure pour des réalisations au fil !</h1>
-                <hr>
-                <section class="home">
-                    <article class="portrait">
-                        <img src="img/me.png" alt="logo" class="photoMe">
-                    </article>
+            </div>
+            </div>
+        </nav>
 
-                    <article class="histoire">
-                            <h2 class="laPetiteHistoire">La petite histoire…</h2>
+    
+        <section id="projecteur">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <figure>
+                        <img src="assets/img/header.png" alt="Profil Adeline Clère" title="adelineClere">
+                            <figcaption>
+                                <h1>Adeline Clère Graphiste Développeur Intégrateur</h1>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section id="projecteur">
+            
+
+        <section id="presentation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="accroche">Des prestations sur-mesure pour des réalisations au fil !</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">  
+                    <aside class="col-sm-3"> 
+                        <section class="home">
+                            <img class="portrait" src="img/me.png" alt="logo">
+                        </section>
+                    </aside>
+                    <article class="col-sm-9" "histoire">
+                        <h3 class="laPetiteHistoire">La petite histoire…</h3>
                         <p>Après un Bac Math./Sc. Physiques, des études en Communication d’Entreprise et Culturelle, le goût de la construction, création, détournent mon parcours pour me former en alternance au métier de maquettiste-graphiste. Et aujourd'hui, avide de technique et d'élargir mon champ d'action, me voici développeur et intégrateur web après une formation intensive diplômante et labellisée au sein de l'école <a href="http://www.wf3.fr/" target="_blank">Webforce 3</a> !</p>
                     </article>
-                    
-                    <hr>
+                </div>
+                <hr>
+                <div class="pointsForts">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4>Réactive   I   Efficace   I   Rigoureuse   I   Créative   I   Curieuse   I   Voyageuse   I   Passionnée</h4>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </section>
 
-                    <article class="pointsForts">
-                        <h3>Réactive  I  Efficace  I  Professionnelle  I Rigoureuse I  Curieuse  I  Voyageuse  I Passionnée</h3>
-                    </article>
-                </section>
-             </main>
-
-
-             <button><a href="#top"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a></button>
-                    
-            
-            <hr class="filetFooter"> 
-            <footer>
-            <p class="texteFooter">© 2018 - site front scratch</p>
+    
+        <button><a href="#top"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a></button>                 
+        
+        
+        <footer>
+            <div class="container">
+                <hr class="filetFooter">
+                <p class="texteFooter">© Adeline Clère 2018 - MyWeb wf3 from scratch</p>
+            </div>
             <!-- Zone du bas. Ex : liens administratifs, ML, plan du site, CGU, CGV, contact, Copyright -->
-            </footer>
-	
-        </div>
-	</body>
+        </footer>
+        
+    </body>
 </html>
     
 

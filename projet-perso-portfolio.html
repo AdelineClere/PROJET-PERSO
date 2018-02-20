@@ -1,99 +1,236 @@
 <!Doctype html>
 <html>
 	<head>
-		<title>Projet perso</title><!-- Titre de la page -->
-        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/projet-perso.css"><!-- Lien vers mon fichier CSS -->
-		<meta name="description" content="Projet perso"><!-- Description de la page -->
-		<meta charset="UTF-8"><!-- Encodage -->
-		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Cette ligne est obligatoire pour faire ses tests smartphone en ligne -->
-	</head>
+        <!-- Encodage de la page pour les accents -->
+        <meta charset="UTF-8">
+        
+        <!-- Titre de la page -->
+        <title>My Web Wf3</title>
+        
+        <!-- Description de la page -->
+        <meta name="description" content="Projet perso">
     
-	<body>        
-		<div id="contener">
-            <section id="top">
-                <a href="index.html"><img src="img/fee.jpg" alt="logo" class="logo">
-                </a>
-            </section>
-            
-            <nav class="mainMenu">
-            <input type="checkbox" name="panel" class="hidden" id="panel">
+        <!-- Pour Internet Explorer : S'assurer qu'il utilise la dernière version du moteur de rendu -->
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        
+        <!-- Affichage sans zoom sur les mobiles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- favicon -->
+        <link rel="icon" sizes="48x48" href="assets/img/fee-favicon-48.png" type="image/png">
+    
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
-            <label for="panel" class="menuTitle"></label><div class="clear"></div>
-                <ul class="menu" >
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+         <!-- FontAwesome CSS -->
+         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+         
+         <!-- Styles CSS -->
+         <link rel="stylesheet" href="assets/css/projet-perso.css">
+         
+         <!-- HTML 5 Shiv -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+         
+    </head>
+    
+    <body>   
+        <!-- Menu du Haut : Navigation Bootstrap -->
+        <nav class="navbar navbar-mainMenu">
+            <div class="container">
+            <div class="navbar-header">
+            
+            <!-- Gestion du Menu Burger : Version Mobile -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+
+                <!-- La fée -->
+                <a class="navbar-brand"  href="index.html">
+                <img src="assets/img/fee.jpg" alt="logo-fée" class="logo" aria-hidden="true">
+                </a>
+            </div>
+            
+            <!-- Le Menu -->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
                     <li><a href="index.html">Ma pomme</a></li>
                     <li><a href="projet-perso-portfolio.html">Portfolio</a></li>
                     <li><a href="#">Mon œil</a></li>
                     <li><a href="#">Des mots</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </nav>
-            
-            <section class="headerPortfolio">
-            </section>
-            <nav class=navPortfolio>
-                <ul class="menuPortfolio">
-                    <li><a href="#web">Web</a></li>
-                    <li><a href="#edition">Edition</a></li>
-                    <li><a href="#identite">Identité</a></li>
-                    <li><a href="#matteP">Matte-painting</a></li>
-                </ul>               
-            </nav>
-            
-            
-            <section class="sectionPortfolio">
-                <h2 id="web">Web</h2>
-                <article class="portfolioWeb">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                </article>
-                <hr class="filetHoriz">
+            </div>
+            </div>
+        </nav>
+    
+        <!-- Menu Portfolio -->   
+        <section class="headerPortfolio">
+            <div class="container">
+                <div class="row"> 
+                    <div class="col-sm-12" "navPortfolio">
+                        <ul class="menuPortfolio">
+                            <div class="row"> 
+                                <div class="col-md-3 col-sm-6"> 
+                                    <li><a href="#web">Web</a></li>
+                                </div>
+                                <div class="col-md-3 col-sm-6"> 
+                                    <li><a href="#edition">Edition</a></li>
+                                </div>
+                                <div class="col-md-3 col-sm-6"> 
+                                    <li><a href="#identite">Identité</a></li>
+                                </div>
+                                <div class="col-md-3 col-sm-6"> 
+                                    <li><a href="#matteP">Matte-painting</a></li>
+                                </div>
+                            </div>
+                        </ul>               
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section Portfolio --> 
+        <section id="Portfolio" class="col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <!-- Section Web -->
+                    <div class="col-sm-12" "portfolioWeb">
+                        <h2 id="web">Web</h2>
+                            <div class="row"> 
+                                <div class="col-md-3 col-sm-6"> 
+                                    <img class="img-responsive thumbnail" src="img/web/web_apple.jpg" alt="codage page apple">
+                                </div>
+                                <div class="col-md-3 col-sm-6"> 
+                                    <img class="img-responsive thumbnail" src="img/web/web_pause_cafe_tea_time_1.jpg" alt="Design site Pause café tea time">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_pause_cafe_tea_time_2.jpg" alt="Design site Pause café tea time">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_paris_sur_vins.jpg" alt="Site wordpress Paris sur Vins">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_chugai.jpg" alt="Design appli Chugai">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_novartis_lucentis.jpg" alt="Design appli Novartis Lucentis">
+                                </div>   
+                                <div class="col-md-3 col-sm-6"> 
+                                    <img class="img-responsive thumbnail" src="img/web/web_roche.jpg" alt="Design appli Roche">
+                                </div>
+                            </div>
+                        <hr>
+                    </div>
+
+                    <!-- Section Edition --> 
+                    <div class="col-sm-12" "portfolioEdition">
+                        <h2 id="edition">Edition</h2>
+                            <div class="row"> 
+                                <div class="col-md-3 col-sm-6"> 
+                                    <img class="img-responsive thumbnail" src="img/web/web_apple.jpg" alt="codage page apple">
+                                </div>
+                                <div class="col-md-3 col-sm-6"> 
+                                    <img class="img-responsive thumbnail" src="img/web/web_pause_cafe_tea_time_1.jpg" alt="Design site Pause café tea time">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_pause_cafe_tea_time_2.jpg" alt="Design site Pause café tea time">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_paris_sur_vins.jpg" alt="Site wordpress Paris sur Vins">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_chugai.jpg" alt="Design appli Chugai">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_novartis_lucentis.jpg" alt="Design appli Novartis Lucentis">
+                                </div>   
+                                <div class="col-md-3 col-sm-6"> 
+                                    <img class="img-responsive thumbnail" src="img/web/web_roche.jpg" alt="Design appli Roche">
+                                </div>
+                            </div>
+                        <hr>
+                    </div>
                 
-                <h2 id="edition">Edition</h2>
-				<article class="portfolioEdition">    
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                </article>
-                <hr class="filetHoriz">
+                    <!-- Section Identité --> 
+                    <div class="col-sm-12" "portfolioIdentite">
+                        <h2 id="identite">Identité</h2>
+                            <div class="row"> 
+                                <div class="col-md-3 col-sm-6"> 
+                                    <img class="img-responsive thumbnail" src="img/web/web_apple.jpg" alt="codage page apple">
+                                </div>
+                                <div class="col-md-3 col-sm-6"> 
+                                    <img class="img-responsive thumbnail" src="img/web/web_pause_cafe_tea_time_1.jpg" alt="Design site Pause café tea time">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_pause_cafe_tea_time_2.jpg" alt="Design site Pause café tea time">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_paris_sur_vins.jpg" alt="Site wordpress Paris sur Vins">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_chugai.jpg" alt="Design appli Chugai">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_novartis_lucentis.jpg" alt="Design appli Novartis Lucentis">
+                                </div>   
+                                <div class="col-md-3 col-sm-6"> 
+                                    <img class="img-responsive thumbnail" src="img/web/web_roche.jpg" alt="Design appli Roche">
+                                </div>
+                            </div>
+                        <hr>
+                    </div>
 
-                <h2 id="identite">Identité</h2>
-                <article class="portfolioIdentite">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                </article>
-                <hr class="filetHoriz">
+                <!-- Section Matte-painting --> 
+                    <div class="col-sm-12" "portfolioMatte">
+                        <h2 id="matteP">Matte-painting</h2>
+                            <div class="row"> 
+                                <div class="col-md-3 col-sm-6"> 
+                                    <img class="img-responsive thumbnail" src="img/web/web_apple.jpg" alt="codage page apple">
+                                </div>
+                                <div class="col-md-3 col-sm-6"> 
+                                    <img class="img-responsive thumbnail" src="img/web/web_pause_cafe_tea_time_1.jpg" alt="Design site Pause café tea time">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_pause_cafe_tea_time_2.jpg" alt="Design site Pause café tea time">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_paris_sur_vins.jpg" alt="Site wordpress Paris sur Vins">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_chugai.jpg" alt="Design appli Chugai">
+                                </div>  
+                                <div class="col-md-3 col-sm-6">   
+                                    <img class="img-responsive thumbnail" src="img/web/web_novartis_lucentis.jpg" alt="Design appli Novartis Lucentis">
+                                </div>   
+                                <div class="col-md-3 col-sm-6"> 
+                                    <img class="img-responsive thumbnail" src="img/web/web_roche.jpg" alt="Design appli Roche">
+                                </div>
+                            </div>
+                        <hr>
+                    </div>
+                 
+                </div>  <!-- end div row -->
+            </div>  <!-- end div container -->
+        </section> <!-- end section portfolio -->
 
-                <h2 id="matteP">Matte-painting</h2>
-                <article class="portfolioMatte">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                    <img src="img/"".png" alt="" class="visuelsPortfolio">
-                </article>
-                <hr class="filetHoriz">
-
-            </section>
+                    
             
-            
-            <button><a href="#top"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a></button>
-            
-            
-            <footer>
+        <button><a href="#top"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a></button>
+        
+        
+        <footer>
             <p class="texteFooter">© 2018 - site front scratch</p>
             <!-- Zone du bas. Ex : liens administratifs, ML, plan du site, CGU, CGV, contact, Copyright -->
-            </footer>
-	
+        </footer>
+
         </div>
+
 	</body>
 </html>
     
