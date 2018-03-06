@@ -1,0 +1,414 @@
+/* ---------------------
+    INFOS RESPONSIVE
+
+    col-xs	< 768 px		tel				> tout reste en place
+    col-sm	768 < > 992 	tablette		> passe sur 1 col en dessous de 768  (= pt de rupture)
+    col-md	992 < > 1200	ordi classiq	> passe sur 1 col en dessous de 992  (= pt de rupture)
+    col-lg	> 1200 px		Très grd format	> passe sur 1 col en dessous de 1200 (= pt de rupture)
+
+------------------------ */
+
+
+/* ---------------------
+    STYLE PAR DEFAUT
+------------------------ */
+
+.absolute {
+    position: absolute;
+}
+    
+h1 {
+    font-family: 'Abel', sans-serif; 
+    color: #3c3939;
+    font-size: 200%;
+}
+h2 {
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    color: #3c3939;
+}
+h3 {
+    font-family: 'Abel', sans-serif;
+    font-size: 100%;
+    color: #3c3939;
+}
+p {
+    font-family: 'Abel', sans-serif;
+    color: #3c3939;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+#contener{
+    width: 1000px;
+	margin: auto;
+    background: white;
+}
+
+.reinitialise {
+    border-radius : 0
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+
+/*==========  Pour les Ecrans Large ==========*/ 
+
+/* remove marging */
+.rm {
+    margin: 0 !important;
+}
+
+/* remove padding */
+.rp {
+    padding: 0 !important;
+}
+
+/* marging top */
+.mt-40 {
+    margin-top: 40px;
+}
+
+
+/* ---------------------
+	NAV BAR mainMenu
+------------------------ */
+
+.logo {
+    width: 60%;
+}
+.navbar-mainMenu {
+    background-color: #fff;
+    margin-bottom: 0;
+}
+
+.navbar-mainMenu ul {
+    text-align: center;
+}
+
+.navbar-mainMenu ul li,
+.navbar-mainMEnu .navbar-brand {
+    margin-right: 2rem;
+}
+
+.nav li a {
+    font-family: 'Abel', sans-serif;
+    font-size: 17px;
+    color: #3c3939;
+    text-transform: uppercase;
+    display:block;
+}
+
+a.navbar-brand {
+    color: #3c3939;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+
+/* ---------------------
+        NAV
+------------------------ */
+/*
+#mobile {
+    background-color: #3c3939;
+}
+
+#mobile ul {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#mobile ul li {
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+
+#mobile ul li img {
+    max-width: 100%;
+}
+*/
+.navbar-toggle {
+    background-color: #3c3939;
+} 
+
+/* ---------------------
+    Flèche haut
+------------------------ */
+
+button {
+	position: fixed; 
+	right: 25px;
+	bottom: 25px;
+	background: none;
+	border: 0;
+    font-size: 250%;
+	transition: 1s;
+    /* cursor: pointer; */
+}
+button .color{
+    color: #3c3939;
+}
+button :hover{
+	color: #878282;
+}
+
+/***************** PROJECTEUR *******************/
+
+.projecteur {
+    margin-top: 70px; 
+    background: #3c3939;
+}
+
+.projecteur img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+figcaption p {
+/*  position: absolute;   */
+    color: #fff;
+    font-size: 150%;
+    box-sizing: border-box;
+    line-height: 150%;
+}
+.nom_Prenom {
+    color: #ffff33;
+    font-size: 200%;
+}
+.mailTo {
+    color: rgb(245, 134, 29);
+}
+
+/***************** MAIN HOME *******************/
+
+h2 {
+    font-family: 'Abel', sans-serif; 
+    color: #3c3939;
+    font-size: 36px;
+}
+h3 {
+    font-family: 'Abel', sans-serif;
+    font-size: 28px;
+    color: #3c3939;
+}
+h4 {
+    font-family: 'Abel', sans-serif;
+    font-size: 21px;
+    color: #3c3939;
+    line-height: 150%;
+}
+
+.accroche {
+    text-align: center;
+    padding: 90px 0 40px 0;
+}
+.portrait {
+	width: 80%;
+    float: left;
+}
+/*
+.histoire {
+    float: left;
+    box-sizing: border-box;
+}   */
+.laPetiteHistoire {
+    margin: 70px 0 10px 0;
+}
+.histoire p {
+    text-align: justify;
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.pointsForts{
+    width:100%;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.21em;
+    display: block;
+    padding: 40px 0;
+    clear: both;
+}
+hr{
+    height: 1px;
+    background-color: #3c3939;
+    border: none; /*on supprime le style par défaut*/
+    margin: 0;
+  }
+
+/********************* NAV PORTFOLIO ******************/
+
+.headerPortfolio{
+    background: #3c3939;
+    padding: 80px;
+    margin-top: 60px;
+}
+.menuPortfolio {
+    margin: 0 80px 0 80px;
+}
+.menuPortfolio a{
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+	color: #3c3939;
+	text-decoration:none;
+    background: #ffff33;
+    padding: 50px;
+    border-radius: 100px;
+    margin-top: 0;
+}
+.menuPortfolio li:hover{
+	cursor: pointer;
+}
+.menuPortfolio a:hover{
+	color: #ffff33;
+    background: #3c3939;
+}
+
+
+/***************** PORTFOLIO *******************/
+
+#Portfolio{
+    margin-top: 100px;
+}
+.thumbnail {
+    padding: 0;
+    margin: 30px 0 30px 0;
+    border: 0;
+    border-radius: 0;
+    }
+
+.img{
+    width: 100%;
+    padding: 15px 0;
+    margin: 0px;
+}
+/***************** FOOTER *******************/
+
+footer {
+    margin-top: 20px;
+	padding:15px;
+}
+.filetFooter {
+    margin-bottom: 20px;
+}
+.texteFooter {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    color: #3c3939;
+}
+.clear {
+	clear:both;
+}
+
+/* ?????? */
+.fa-angle-up:before {
+    content: "\f106";
+}
+    *:before {
+        box-sizing: border-box;
+    }
+
+
+
+/***************** POPUP images *******************/
+
+    #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    #myImg:hover {opacity: 0.7;}
+    
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+    
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+    
+    /* Add Animation */
+    .modal-content, #caption {    
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    
+    @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+    }
+    
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+    
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+        .modal-content {
+            width: 100%;
+        }
+    }
