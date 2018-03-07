@@ -11,17 +11,17 @@ include_once("inc/nav.php");
                     <div class="col-sm-12" "navPortfolio">
                         <ul class="menuPortfolio">
                             <div class="row"> 
-                                <div class="col-sm-3 col-xs-6"> 
-                                    <li><a href="#web">Web<br>-</a></li>
+                                <div class="col-md-3 col-sm-6"> 
+                                    <li><a href="#web">Web</a></li>
                                 </div>
-                                <div class="col-sm-3 col-xs-6"> 
-                                    <li><a href="#edition">Edition<br>-</a></li>
+                                <div class="col-md-3 col-sm-6"> 
+                                    <li><a href="#edition">Edition</a></li>
                                 </div>
-                                <div class="col-sm-3 col-xs-6"> 
-                                    <li><a href="#identite">Identité<br>-</a></li>
+                                <div class="col-md-3 col-sm-6"> 
+                                    <li><a href="#identite">Identité</a></li>
                                 </div>
-                                <div class="col-sm-3 col-xs-6"> 
-                                    <li><a href="#matteP">Matte-<br>painting</a></li>
+                                <div class="col-md-3 col-sm-6"> 
+                                    <li><a href="#matteP">Matte-painting</a></li>
                                 </div>
                             </div>
                         </ul>               
@@ -29,8 +29,7 @@ include_once("inc/nav.php");
                 </div>
             </div>
         </section>
-
-     
+        
         <!-- Section Portfolio --> 
         <section id="Portfolio" class="col-xs-12">
             <div class="container">
@@ -50,9 +49,9 @@ include_once("inc/nav.php");
                                     <img id="myImg" class="img-responsive thumbnail" src="img/web/w' . $i . '.jpg" alt="' . $legend['description'] . '" class="img-responsive">
                                     </div>
                                     <div id="myModal" class="modal">
-                                    <span class="close">&times;</span>
-                                    <img class="modal-content" id="img01">
-                                    <div id="caption"></div>
+                                        <span class="close">&times;</span>
+                                        <img class="modal-content" id="img' . $i . '">
+                                        <div id="caption"></div>
                                     </div>';
                                 }
                                 ?>
@@ -123,27 +122,43 @@ include_once("inc/nav.php");
  <!-- --------------------------------- JS POPUP MODAL-------------------------------------- -->
 
     <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
+        // document.addEventListener("DOMContentLoaded", function() 
+        // {
+            // Get the modal
+        
+    
 
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('myImg');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
+            var modal = document.getElementById('myModal');
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-            modal.style.display = "none";
-        }
-    </script>ipt>
+        for (var i = 1; i < 7; i++) {
+
+            var modalImg = document.getElementById("img"+i);
+            console.info(modalImg);
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                console.info(modalImg.src);
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        } 
+        // });   
+    </script>
+
+
+
+
 
 
 

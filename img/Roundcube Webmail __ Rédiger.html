@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://webmail.clere.me/?_task=mail&_action=compose&_id=1768324325a9fa86023cf3 -->
+<html lang="fr" class=" js chrome webkit"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Roundcube Webmail :: Rédiger</title>
+<meta name="viewport" content="" id="viewport">
+<link rel="shortcut icon" href="http://webmail.clere.me/skins/larry/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="./Roundcube Webmail __ Rédiger_files/styles.min.css">
+<link rel="stylesheet" type="text/css" href="./Roundcube Webmail __ Rédiger_files/mail.min.css">
+<!--[if IE 9]><link rel="stylesheet" type="text/css" href="skins/larry/svggradients.min.css?s=1510805273" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="./Roundcube Webmail __ Rédiger_files/jquery-ui-1.10.4.custom.css">
+<link rel="stylesheet" type="text/css" href="./Roundcube Webmail __ Rédiger_files/browser.css">
+<script type="text/javascript" src="./Roundcube Webmail __ Rédiger_files/ui.min.js.téléchargement"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="./Roundcube Webmail __ Rédiger_files/googiespell.min.css">
+
+<script src="./Roundcube Webmail __ Rédiger_files/jquery.min.js.téléchargement" type="text/javascript"></script>
+<script src="./Roundcube Webmail __ Rédiger_files/common.min.js.téléchargement" type="text/javascript"></script>
+<script src="./Roundcube Webmail __ Rédiger_files/app.min.js.téléchargement" type="text/javascript"></script>
+<script src="./Roundcube Webmail __ Rédiger_files/publickey.min.js.téléchargement" type="text/javascript"></script>
+<script src="./Roundcube Webmail __ Rédiger_files/list.min.js.téléchargement" type="text/javascript"></script>
+<script src="./Roundcube Webmail __ Rédiger_files/tinymce.min.js.téléchargement" type="text/javascript"></script>
+<script src="./Roundcube Webmail __ Rédiger_files/editor.min.js.téléchargement" type="text/javascript"></script>
+<script src="./Roundcube Webmail __ Rédiger_files/googiespell.min.js.téléchargement" type="text/javascript"></script>
+<script type="text/javascript">
+
+/*
+        @licstart  The following is the entire license notice for the 
+        JavaScript code in this page.
+
+        Copyright (C) 2005-2014 The Roundcube Dev Team
+
+        The JavaScript code in this page is free software: you can redistribute
+        it and/or modify it under the terms of the GNU General Public License
+        as published by the Free Software Foundation, either version 3 of
+        the License, or (at your option) any later version.
+
+        The code is distributed WITHOUT ANY WARRANTY; without even the implied
+        warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        See the GNU GPL for more details.
+
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+*/
+var rcmail = new rcube_webmail();
+rcmail.set_env({"task":"mail","x_frame_options":"sameorigin","standard_windows":false,"locale":"fr_FR","cookie_domain":"","cookie_path":"\/","cookie_secure":false,"skin":"larry","refresh_interval":60,"session_lifetime":600,"action":"compose","comm_path":".\/?_task=mail","user_id":"61b4f2a598b522ecd17aa8e118d3666a","compose_extwin":false,"date_format":"dd\/mm\/yy","browser_capabilities":{"pdf":"1","flash":"0","tif":"0"},"compose_id":"1768324325a9fa86023cf3","session_id":"nk9d0g8p2l4q8m4mvnudtk1om3","mailbox":"INBOX.Drafts","top_posting":true,"sig_below":false,"recipients_separator":",","save_localstorage":true,"is_sent":false,"drafts_mailbox":"INBOX.Drafts","draft_autosave":300,"default_font":"\"Times New Roman\",Times,serif","default_font_size":"12pt","draft_id":"10357","compose_mode":"draft","show_sig_later":true,"pagecount":0,"current_page":0,"signatures":{"2":{"text":"Adeline Cl\u00e8re\n-----------------\n0 66 22 99 5 84\nadeline@clere.me\nadeline-clere.fr","html":"<div class=\"pre\"><img src=\"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABpCAYAAAB7wX6tAAAgAElEQVR4nO2dd3RU5daHgwkdlCJe4XothJIAoStNKQI2QOk9BGl6BZSehBIIAdIoQuhNUHqRELqQSq8hjSSk9+l9zvR5vj8miaCICMHyrbtZZ638QTLnPPOWvff72\/s48Q8xu93+V9\/Cr8zpr76BJzG73f6r6+9gf3t4drsdq9WK1WrFYrFgs9n+B+9JzGazYTabMegFCvLyGTNqFEaj8X\/wfsvKpqXFYsFgMKBRq9n3wx7at2lLSnIKZrP5f\/B+y8qmqSAIyOVyvOfNo0H9l9m3dx96vR6r1fo\/eI+yB8EVFBQwYMAAXqr9IuvD1qNWqzGZTNhstr\/6NsvtbwPPbrdjs9kwGAzI5XJmTP+al+vW49MBA5DL5RgMhr\/VZgF\/M3gWiwW1Ws3FuDicnZ2pX6cucXFxf7vpWmZ\/G3hlo04ikeDn50eNGjWoW7cuiYmJ5Tvs38nHg78JvLK1TqfTkZeXR4sWLahWrRq1atXCx8fnoSn7P3i\/MLvdjtlsRqlUEh4eTvXq1alatSo1atSgdu3aJCcnYzab\/7fmPcrsdjtGoxGJRMLkyZOpUqUKNWrUoGbNmtSsWRN3d3cyMjLKAf5d7CnhVdwDlO2yer2e4uJier\/\/Pi4uLrz00ktUq1aN6tWrU6dOHVq3bo1SqSx3Vx41Ap9kVD5q6j\/taH7qkef4vLKHePqp9OB6l5+fT\/t2balevTr169enWrVqVK1aldq1a9OgQQNcXV0JCwtDp9NhNpuxWCxYLBbMZjMmkwmj0Vh+mUwmTCZT+f8r+5J+Ce9Z1tFngFd2I7byn5\/WrFYrGo2G3NxcGr\/5Ji4uLrz88stUr16datWqla99derU4ZVXXqF\/\/\/6kpqaiUqnIz88nKiqKTZs2ERAQwKxZs\/jmm2\/w8\/Nj1apVHDhwgNTUVORyOYIgYDKZsFgs5a5P2X0\/zf0\/FTy73YbVasNisWAyGZ8p21Hm3ymVStLT06ldqzZOTk7UqlWLevXqlQOsVq0aNWvWpFatWtSqVYtGjRrh5uZG5cqVcXJy+t2rXr16dOvWjZkzZxIZGYlWq33mTegp4dkxmYyoNWq+PxJMSsYNdHrtAxDBzpP5ZY6\/ZUIul3MiIqL8YWvUqEGD+o7RV7lyZZydnalUqdITgXqSq0WLFsTExDy0hv5RiE8Fz+HQGpHL5azf54PvmjFsPrSMouJcjEYBm\/XBm7Hz89r4aHgGgwGxWMxXX3xZ\/nDOzs688sorvPDCC08Fp1KlSuXXCy+88NDl4uJClSpVqFSpEseOHXvqTM1TwxMEAbFYxP6IzcxbPYaFG7xYtHEcR89uQa3RYCmbEtjLN5dHWdlmUVhYSPu27Z5pND0OmLOzMy4uLuXgqlSpQvXq1fHw8EAQhKdygX4F70nS3WV+mUwm415qEvPXjmN+2Fh8145lYZgXi9Z9wY2kGARBj91qLf2dR\/+dsng2PT2dl19++alglcEpu1xcXKhatSqVK1emcuXK5bCqVq1afpVtQq+88goSieSpYueH4JW5Db\/c5n+5qNrtNsxmK0qlkuzMLFZ+NxffdeNYEOaJ99pxzFk1lm9CRvHdsTWIpcWYTMZHfrNl8axUKiU8PPwPrWmPGmXOzs7lP1d2dqFalarlvmLZplO9enVq1KhBrVq1qF+\/Pk2bNkWhUGAt\/ZKfGp7NZsNkMqJUSYm\/f4jMwsvIFIUIej1mswmr9We3xGo1o9PqKSwsZNePK\/FZNxbfMC98wzyZGTqWWavG8nXoKOau+pybCRfRC3osVgt2mw273YrNZsdsMqFSqYiJifljo65SJSo5OfFCpUq4OFeiissL1KjsQu2qVahe2YUXKlXihUqVqOriQq3SGLksWqlVqxa1a9embt26\/Otf\/2LChAnodLpnn7Y\/bwQK7qadIC45hNjEIK6lbCe3JAG1Ro7RaMRiMWO1\/rzuXb0Th89aL2av8mTemjHMWj2WGSGjmRU6hmlBo5iybDC7f\/wWpUqKyWLGbrH+nH66ePGJRlylSo6rirMzjV6sTte36jGgaQNGeLzM1PavMqdzIxZ2a8TyHq8xu1MjOr9ej5pVXKharSr16tSjTp06vPjii7z00kvUq1ePV155hVdffZWoqCgMBsOzbxhla5lUJiUjM5WYhGCi7q4gNimI2KTlRCcsJyEzArmyBINBj8GgR6lUkZWTzfr9AcxePRbvtV7MWzOOr4NHMyN4FDOCRvPVsiFMWzacOSFe5BbcRyfoUatVpKenU7du3d+F5lLpBapVcaZL4wZ80aEhc7o2YnH3\/xDU+3W293+D0N6vE9bnDTZ98Aa7B7zF9gFvsuOTNwnr+yYNatek7ksvUbduXerVq0f9+vVp0KABjRo1Ys2aNWg0Gsxm8x8G90h4ZrPDYc3OziQ2YRXRCYHEJYcSmxhCTGIQcUmhxCWHcif9eySyYhQKBYWFBVyIO82slWOYu8aTuWu8mLlqNDOCRzNx4VCmLxvOf5cPZ\/KSoUzyH8rx8\/soKCigY4eOTzRNO7\/xMr7dGrK05+v49\/g3y3q8QdgHb7J7YBMODnNl96BmHBrSlEODm7J3iDtHh7Xl4DA3jg5yZefHb1GlcvWHRlzDhg3p3r07EokEo\/HR6\/EfhgeOqavTCZSUFJOUdoWYxEAHuIRgYpOCiEsOIS55FRdTQolJCOZm2h6ycu+Rci+ZwG2zmLXGk9mrxvB18CimB45k2vKRTPEfypg5\/Rm\/YCCT\/QYzedFABg0d8PgR5+REVWdnxndsxLL3XyP0gzdY1ecNNn78BlsHNObAqDacHNOa3UNbs2NwSyLGtOfsuE4cHtedqGkDifB6lwvjOnB+hBtz33OlTp06NGjQgIYNG9KvXz+Ki4ufOUP9CFfFVurxK8jIyORy0jai764g+m4gcUkruZgcyqV7q7iYHEpcUggXk0OISQjlVnI4Fy6dYHrgcGavGsOskDFMDRjGF\/5DmOQ3iIkLBjL8m48Y9vWHeM4eQJWqjw+rnJ1f4PPOb7JxQDN2DW7O1s8as31AM3YO9eDImI5EftmTrcPfYefYdzk+7RMuzfyAizM+JmrmEC7OHErU1wOJm9KLy17tuTz+Hd5q+Cr\/btiIQYOHkJObi06nK08YPK090km2Wq3o9XqKioqIv3eO6IQgouIDiU0MLR15IcQmhjz0c3RiMLGJa1i\/fyreazyZtWo001aMZMriIXzuOwCveQMYM7sfo2Z\/gvs7LR4LzuWFFxj5TjOOePXk4IS+\/DixFwfGded7z16ET+zD1blDODFjAAHD3sezmwdzPnib+JX\/JWfNBDJWTiRpyWiuzxvBndmfETmuHUnT+jK8S0vGe3lRWFRUIeB+E17ZxuEYfRlcStxGXLJj87iYHEJsUim4pJXEJAYSdTeA2MRg4hJDuZ66imNxS5i3Zhxf+g\/lyyWD+dz3U8bM6c\/wWZ8wcEofatWq\/lhw495ty7nZIzkx25Nzcz35adYITk0bzNmZI7m90JNLAWO5FjqRER\/3xtmlEvVrVWPS4I8Rjvqg\/tEb7XEfVEeWsGvix4R99jbJcwdzcvUiRCIRep0OcwUdJv0mPKvVjE6noaiokNspZx27bmIosUmhxCQGEpMUzIWEQKITVhAVH0R0YijRiSu5mBTKudtBnL2xjKWbJzHOewBjZ3\/CiJkfM2jqh\/T7vOdjR11A\/\/YcG\/8uh0e\/zenJvYj9qjeRU3sT9U0\/bs\/5jCsBY8jfOR3V4bnE7Q9jYp8O5Bz1RR4ViP78Ugw\/BSCc9yf9YACVK1emh3szTnl2RZyZjlarx2y1YKugVP5vxrYOh9mR7cjMzODi3c1EJwZz4eIiIqMWEH0zgOhSgFF3g4hJCCHqbjAXk4L46eYKzlxfyskr\/mzcP53BX3\/E8Gl9GfLfPvQZ3vWR0Fq9Vp8fhrcl3LMjx706cnpyd27NH8i9oJHcXj6CeyFjuR82kaLdM9Ac8UZ33BddxHz0Z5agP78UIToI4XwA+p\/8UR7zQRMdwC7\/sYzp0oZTU3qjkIoxmUwVegbym\/AezPAWFRWReO86MQnLibq6mPP7pxO5dQpRh2cRGb2QC\/GBRCcFE303hMjby7hwK5DTV\/2JuOzPj7EL2fbjTEbO7seAKb3pOaTLQ9BefakWM7u7cmHS2xzy7MQhr+78+N\/POO3jhWT\/DDLWjSdr8xeIv\/8a1aE56I75oI9YiP7kIvSn\/NCf8kN31h\/h\/HIMkcsRzvqjPjwPY+wKzDdDuD2lBwWbFqLVqJ8qBHsqeGUATSYTSoWS7JxsribtJjYpiKjrSzn\/40wi10wg0n8EkaGexO6bSWzkEqJuLuPk5aWcuLKUU5eXcCxuMXvP+7DjxBzGew+k14h3ea3Oi7z7Rn0CP2zBmfHtifBsi09vD5YM7M7Jb4Zzxfdzjk4fjO6YNxnfjqNgyxeoD89BF7EA\/alFCKf9Ec76oz8bgP5cAELkCoyXQzBeDcF0KQTT1WAsd1djvrUS6bENaO8nPnXm5Knhwc87r0gkJjU1kdjEVaW+XzAx8YFc+MmHM5smcGz+AE5O7cuFr\/sSuXAoF5aPJHrNOE6uHcOxTeM4sWESpwNHcu6bD4md0pGfxrXlyAgPfHq48u+X6zCzT3uO\/XcQ1xZN4tz0Tzn73w8RH\/JFtHcWudumoD06D+HUYvRn\/RHOLUM4v9xxXViBMToY47VQTDdXobuyDeX146ivbcMcvwZdzkWUClWFT9knggdgNptRqZTk5RVwI+UQ0QnLiEkIIjYppDzyuHB7GWfPzeOWnxdXZnzCxS\/f58KErpwb15HT497m9LiOnJnYhRNf9mTfjH70aPJvXJxfoJKTEwM93uDA+J7cXDyJc9MHc\/LzzkRMeJ\/YOWPI3TwJbcQC9BEL0Z1Zgu5cAIaflqMvBWeIDMQQG4T52irMt1eTvNOXNSOHs2HoEITra9Bnn0Wn0z4XucYTwbPZrBgMRqRSKen3M7iYFFYadYQQm7ScmIRQopJCifppEacnv8+RMV3ZP7YXJyb05sDgdhwe1pGIUZ04MKIb++cNZtu3U2nb3h3nSk4MaPIqPwxpT9zckZya+hnHJ\/ch3LMd57\/owSWfCVye2RttuI9jyp5ejFAKz3B+BcIFx2WICcJwJRTz7TUYrq5m9+DBJK6agzU9DK3oHibB+Nj85HOFZ7fbsFjMaLVaCgsLSUiNI+rucmISQ4lNWklMYhBRd4OIvhzA2QnduTDxPU54duXg8LfZP\/QdtvVvw9ZPWrF3YHsODu7AnqGd2eD5Pn493fl+UDsiv+rD8fG9ODy+BwdGtOa4Z0fCx3XmwtT+xHgPQXl4DsLx+WhP+yGccax1wrllCD85Rp8QHYjxUijGWyux3l2HkLQBS+oGLOnbUasUjkzOc1AaPHEa3rF5mFEoFGRlZ3E96aAjYZAUQmxiKNFJIcRcWs5hr+4cGfUOR0d2IGLU2xwf1Ynjo99h76AO7Bvclr2D2rB3cDsOj2jHoaHtODmuG4fGdGb3qHfYN6IVh0Z4cGR4GyLGduDIqE5sH9WF26u9UBzxQXd8AfpTC9GfXoJwZimGc8sQzi3DcGE5hrhATFdDsdz5FkviOizJa9EUXkev02F5TgqrJ4Rnf+BkX0AiEZN+P4XYhDXEJa0kLnmlA+CdIL6b3ps9w9pyeER7Do\/qwLFR7Tg29m1OjG7P8TFvc3R0O46Mas3xUW0JH9aaHwZ78P3o9uwZ24adg9uyvX9LDgxrw46hHmzq35LgPq5s\/MyDy8tHUrJvDuoffdAfn49wYiH6E34Ip5egP+OPcD4AU2wwpushWG6vQpt5EqVKgclkfvQZwJ8HrxRh6ZmDRqOhsLCQ5Hu3iEsO5WLySqITg4hJCCb67goO+H7CrqGtOTi8LXsGe7Drs5YcHOrBwWGtiRjTlpOeHTg0shVb+jdj9xB3jo7y4MjYduwf8w7fDWnH2k9asHWAG2EDOrD2k2ZsHdCCbz9qxs6xXYhfPZncbV+i2DsD3eHZ6I7ORRfug\/74QnRn\/THEhiLPuo1cocAkGBzZb5v9WUQNFQOvDKBj+irJycnkdspRYhNDOH83iLi7QUQmhnAl6VvOH57NkS96suezVhwe0Yb9wz04MrodPwxuwc6Bbhwa4cGBYa0JH9Oak54dOebVlW0D3An+sCkhH7mx+qOWhPRszLZPW7L509as+cidpT3eYku\/luzz6kJ8wDCUu79Bd8KXkiNLKYyPpSAzlZKSYlQqDWZBwGKzlG4Uloonx1PCc+y+BqRSCRkZ97maso24pFCik1Y5pnHSSuKSgjl3fSmnjs\/ke9+P2D32HXZ91or9Qz3YNdCNfUPciRjTmhNjO\/DDsLas7+dGSB9XQvq6srpvc4L7tmJVH3c292\/Fuo\/d6fFWA6pXrsyL1aoSFzgWbbgPxrNLMFwJJOfKD1y5dAmZTIper8NismArBecYcc+mp6kweAB2u+MMQqfTU1JSRFr6PS4mbSxNTa3kUvIqLiWHEnlrBaeuBXDq6lL2nJ7Lju+\/YHvIKNZ\/+SGbPu\/FumFdWPVJK4J6NePbvm5s7NeKbZ+2YXv\/tmz6tD0r+rRmeS93mr384kMh3Us1anAmdAKmyyswXQ3CfDOI\/fOHcvDAAYxGE7bSaVqqQsGO7XnM2mcR+jgEiRqNhuLiYu6l3eFS4kZiEstyfKFE3gnk7PVlnLi6lIORC\/juxGy2HJvB6v1TCdg8gaVrPZnnPwQf34EsXjiIGV\/0ZeZ\/P2La9A+Y+2Uf5k7swxv\/qvfIREK9WjU4vmoSplursdxZjd+43vznP\/9BIip+aHd9nmrSZxI3lsW+Go2GoqIi0tJTuJi4gZjE5UQnBhEbH8ypq0s5c20JR2MW8t2JOWz58WtWff8FoXu+ZMH68cxZ5VAbfBUwnC8WD2Ly4kGMnd2fwV9\/gFvr5r+TbXZm8iedWDS6J1VLBT8fvN8bnaD\/U2S4z6wMfXAElpSUkJGRzvWkQ0TeCeRiUiBnbyzn3PVFHItbzPdnvNl8bBarv\/+StXu+ZPF6L+aHjWPasuFMDRjON8tHMt73M4bP6UfHzq2eWnZx48rVCskU\/55VCLwygDqdDolETG5uHimp8VxO2MiZ636cvurP0dgFHLjgy\/cnZhP6w2SCd05hUdh45q31ZNqyocwKHc20xYMZv3AQbd\/zeGpwTk5O1KheHZlM9tzLDypMk\/xgvZhKpaSkpISsrAwSUi4TdWsr4bHzOXjeh92n5rD58Nes3vMFfhu9mB06hulBI5m6bDj\/XTqM9t1aPhO4smv3rl2lmRSH5O1v4ec9zsqiELPZjF6vR6GQU1xcTHZOHompV4m6vo8DPy1l46HprN77Bct3Tsb7W0++Dh7JtOXD6dSrza\/UA87OzrzSqMEfhteoYUPkcrlj9JX+q2h7Lmp4RxbagslkRq\/XoVKpEIvFFObnk5mZye2ES0RE7WTLfj+WbZvOojAv3u3f+ZFavHa9PHjNteFjQbVs7sZnA359Drw+LAyT2fTcNo7nWkpgszmKjM1mMwaDgFarRalUIhHLKSwsIjc3l7S0NBISbvDj0f2cWOZF41frlz\/8v15vyBT\/Ufz79d+G5+LiwtmfzhK2dg1OTk5UdnHmP6\/W4aOO7rzXpTOCYMBuex7j7rnCezjl\/eCUNhqN6PU61GoNIpGYrIwcFHcOYzy\/HOmROTR\/\/VVerl+PmzevE3\/rDh4tfnsdnDhxIrm52dxNSKRSJScCJ3yEcHIRhnP+ePbrgkqlcqTf\/+5r3u+ZrVQ57xiRNgx6IxKpFEnqVYToEITzy0iPPcr4cV7s3LGde\/eS8Rzr+Zsqqvr161NSUoJUKiM3N4d2Hm1o1qg+uogF6MLno4o\/gkarwWax\/nPWvN8yR5jpcF4NFhMqtRpJThJCbDBCbCCiOye4n5bOzVvXmTxpCv957d+PXeu8vLxQq9VodXqkMhm3bt1g7569SGJ3oD\/phxC5wnFq9px8vj8XXplPaLWg1eqQFOeju7oFQ0wwsjuHuH3zJrNmzOSlF198LDQnJydq1qxJWloaBoMBs9mCXtChUigoyC8gIz0V7dllCKcXIxQlYDH\/P4FntVjQ6wREEgna699hiA1CeuMH9uzZQ926dZ7YFfn444\/RaDQPVPdYMRqNKJUK8vLzEN0+jXDGH+HaDgwPhGu\/d39\/pAXJnwbPbrdjs9owCgakYgn6+CMIcYEoru1myqRJf9iP8\/f3R6fT\/aqKp0xonpWdg+biNoQLgWg1SiyWB2Jdu9WRdbE7JL4O18qGxWLDZDZiNhsxWSzYrY8H+KfBs9lsGIwGFAoV0szrmGKCSQtfhuvrjZ4qgjh37tyv2oQ8qHIQiUQU3r+L4fQSDCknMBgMWG2Oci\/sDk\/AardhtdkwWywOV0qjQVOSgzJqG+qjizEbHi98fO7wylwUk8mEQqFEkh2PEBdI8r7ZNHz58ZLax11RUVHlxSe\/BGg2m1Er1RQWFqC4HY4+Kgi1OBej3oDZYsVqddSeGY2mcideUZyNOvMK0qVtkc13RbasJ4JO89fAK3uostIElUqFJDcZw6XVJO6dyyt1aj81OCcnJ6Kjo38Tns1mQycISKVSCrPTEH5aiv7UYoRbe9GKs9Bqdag1GlSSIlR58ejSzmNKPYEhMxJp+FKkJ0NRiQswllaY\/ynwHqw3s5Y6xIIgoJTJEGclIlz6lsT986j3Ys1nAufk5MTx48d\/LcR+YO0zmy2o1GoKCwooToxGf2Ih2nNLkOydjSbzJuq0aIz3IjCmnUGfEYcsL4XiogLEEglKhQK9XsBsffx5bwVmVWyl37rjxgXBgFopR5GbgCZ2DfpzASTv86ZuBYBzcnIiKCjoF40bft4Q7FYbRqsVnUZDUVEJ6SkpSCK3oojZgD7xGKb0sxjunUWefYvi4kIkUikqlQqtVlteVvokiqoKhAd2qxWd0YBGpUYqLkZ7eSeGn5Zh+CkQ0\/WVeDR5rULAOTk5MXr06J\/rJ+yAzSHINJlM6A0CWo0WmbQEcfpVDEnHMKefRnXlB4qOB6C8vJ7iYhFyuRydRo0gCFhN5tIinSdPIlQYPJvdhsFkRKVUoD2\/Bm34fHQn\/NBHB2K6FMrhwAkVWvLZsWPHByq+zY6+U1otSoUcWW4SutSzmFLPYrgXgTzjKnmZaeTcT0GaHodULEaj0WE0mbBYympu\/3jdbcXBs9owGgQUchmK5EgUt8PJSYzhXvx17h\/ypuHLL1UYOCcnJ6pUqcK9e\/fQaDSolEoUBemo0mMwpJzEmByB5v5lpHlpiMVFSCUSZHI5MoUctVqFIBixmq2lpVylaoinCEAqDl6pO6LVapHL5RQVFZOReZ\/D29byUs0aFQrOycmJKpVdCFnsi\/T+NTRJJzAkH0ObFokiOx5JSREymax8HTMYDA8VI1ZUi5EKTcOXuSWCIKBQyLlx7XqFwXqtfm3eafwqHk1eY9LQj0g8vgFj8nHUyadQpF1BXFyIRCpGplCi16ofWvifNNz6o1bhfl4ZRK1WR3FxCSNGDHsqWJVdnHF3fY0tX35Cv3dasNjrY+4fDUQffxBj\/EFUkRvo3rYZO3dsRySRoNFoEPQCFqMD2J\/Rf+W5OMlldbQKuZzc7BwijkXg2sT1iaB90Lkje+YOIX3nNLThC9GdXoIk3B\/RmfUoozejDV+E9uhcjDHL2T5\/ODVr1CA7J9fRscLmEPX8GQfe8DzPMCwOX0+hVFBcUkxmVhYXY2NZv3498+bOYexYTz73Gs+0qdMIXLGCH48e5fLlS9y9dQXtqSUI5\/wxnQnAcG4p2ovrSU6M596tK2h\/9EUXPh\/hjB+ymCC2bNmKSCTCZrVCaUm+3f7ndP2p0DXvwVy33Q5Wm0NRYNDpUaiUSCRiikuKKSwsIj+\/gNzcHHJycsjKzCDt9mUyL58gO3oX6rhNGKOWYzy\/AiFyOYaLwRTkpJGWnoY4bhf6iAXoIxahWv8p8rPfotfqsJTvnLYKK1L5Pau4kfeQp19WzW3DZDFjNDoyFnJpCSWpV5FKRYhEIoqy0shPiKboykHkCRFIUy+Sm3mPtKTbGGJCMMasQLljBIoV7yC7sp\/C\/ALup6WjORuMIqgnktmuSLyboS3KKM3rlWZM\/qReXU8lMSsLvm0220NteB1NakoPeAwGdDoNaoUCaWE2hTf2kriuF3umtiL1xwDE8SdQJ0WguR+DtCADiUSCWCpDJBKTkZVFSfxZ5IEdkfm4IvNtjDRsCCKJmLz8HArCgxDPcqXEuxmSOc1QbPdCb9Q5WpJgey7nFY+yJxR028tBOY4RDej1erRaLRqNBrVajVqpQKWQIhMVICvJpCT1OveDB3P7q6akbepE8reduRnclbgdC5HeOkxJTjIiiRiFQoFKpUKvN2AUDGh0aqQiMZl3ryBf4I5kkStSX1dkC9yRSYsRi6Xcv5+BaGU\/ZHObIZnXFNGst9DEn8ZoMToSnX8ZPDuOb8\/m8MAtFitGkxmdTkClUaIoyUKWEEFu+CzStg8kddOH3NvQm3tr3yNlbRfS1nUlc3M3Mme6kvH1W+QucCNncxcyN3VB9F0Pri7tyPUVfZGW5KPR\/OzAlrkXFrMZlUpFXk4W4g3DkS9qjnSBK+L5rigOL0KhUFBQWEDOpeOIZ7gintcE6dy3kC7ugF6tcJyU\/VUbRnlayWLHKBhQq1VIMq+Td3oJad+NIm1dV9LWdiJ1bWfSwzqTveVd8rZ3I3fre8Sv6sSlgA7kbe5G0ezGFMxqTN4sV4q3dEG6qwfiE9MpuvEDiuJctDr9I719q82KoNdTVFxCZuI1ZH7uyBY2RTq\/MbJlnVHLJMjlMrKzsync44vEuzniuU2ReDdBuX8Wwu9kf58vPLsdk9mIRqtBXHCP3GMzSV3bifvrupC+qSu5W9+lcEd3inb04F5YF24FdSLWvwPnF7bnSlAnEr\/tQerG7khWtKZ41lsUzHOj6K9fJF0AAAkbSURBVLsZ5KfeprhEhLw0V2b5RW3Eg1GAyWhGLpeRkZGOOLgHMj83pAtdkfm1QJV1p\/yw\/P7da4hnN0Hi3RzpvCZIFjRHe\/fsn9aI+tdNacwW1GoNhYX3SVnViZR1ncjb+h5Fu3qQs7Ubiau7cH5hG057t+HS0g5kbe5G4ppOnPPtyI3Q9xDt7kHB1i4U7eyB+FwQJZmpiKRiVCq1oz+LyYzVasFme7T4xo5D56LRaMjLL6Rk11Tkfu5IFjVFvqApqoNz0Gq1qFUq8nPzyD+zGYl3M6TeTRB7uyJb3hmtUvqnAPxVXxVBMCDNSyZ\/Z09KdvWgYOd7XFvRgZ2TmnN0VkvSNnRD9H1Psja+S\/hsDyIXt6Houx6Id3cna0MXcja\/R9bGLpSkX0MikaBWq0t7sVieyOMv25wEQUAkEpF7Nw7ZQndki92RzX8T2YKmaCSFCDq9o4VJWgrFi99D4uOOfF5TpN6uKLd7Ihj0D8e1z1sxYLVaUWvUFGamkBO1hXML3ybKrzUZG7tQvKs7Bbve5ZxvG47N8iA5rAslP\/SgeEcvcjd2JWtzN1JCOiI9+SWi\/CyUShUGg+GpeuuVl6oqlWRlZCBd9QHSxS2QLGyCdGETVLcjEARDaT1IAVk3LiCZ55i+4nlNkM9vjibpAsZyfZ79uRSyPASvrEClIDuF7M1dKdr5HoU7u3NlWUcOznDjamBHsrd2Q7K3J\/lbu3F\/bSeKtnUnPvRtCrf1pCQxHKlEjEarfqbUz8\/JBS0FBQUUHFqKbLEbcr\/myBY2Rb5pGHqdFoPRgFSpJDs7m+JtXyKd1xyJT1Mk3q5Il7RGX5iKtWz3fd5CH6vVilanpaiwiOyYdSSGfcD5Ba25s\/IdSnZ1R\/x9L1LXdiF9TVdyN7\/LvW87kbqmA6Kz3ohyEpArFAiCAavp2eUN5U2npRJykq4jWeiO3M8N6SJXZAuao829i9loRhD0SERSMlOTEYcOQOLrjtjbDZlPUxQ7vNAL+vJ+fhVtj1jzBMQSMdnxF8jf8xmi77tTvG8wSev7ciWgIzlbupER1oXElW8jOjIecVocYrEIjUaL2WjEYrNiq4A1pkymq1KpyM7JpeSgH7IlLZD5uSFb0ATlYe9SnYoJjVZDYVEhmTejkfp6IPVxQ+LTFJlPU9RxWzGZzOW+nyMEf7J7+0Nyi7JssEqhoDjzOsUnZ5J+8Sh3982kaGdX8ra8R3xoF4oOjUF07yKiYhFypRyhdG2r6G+3\/MsUici+cwnJ\/GbIFrdEvsAVSfB7aDVqLBYrJrOltPlqIdlXzyD2aYrEpzlSnyZIl3ZAKyt6QG5hc8Thj9rpn+UMw+EcOw6MFXIp+Xn5iI9PRHR6PqnrOiO6+QP52fcpLhGhUioQBAGjxYTN9vxU5xaLBaVaRW5uNpJjAcgWt0S6qBny+U3QXN2L2WzBZrFhNJpQKWTk5uaSe+M0Uu9mSBc4XBjZyt4Y9RosttJn\/I3P+iMiH3hkLykrZosVQdCgUKmQSqQUi0ooEhUhkclRqZQIegFT6amVzW5\/rikgu9WGXhAQi6Vk3EtC4t8e+WLHxiFb\/xkGQcBus2K1mTEYTChKo4\/8s1uReDdF6tsUuU8zNFd+cExfW6nA+xcnPmXLhNlsLteo\/GGV1M9JABsGswmDYECvFzAIAmajEbPFjLV0pD1pR9pnMbvdjsVsQaNRk59fQF7cYaR+bkgXNUe2uCUaWcnPMjOrBb1gQCKRkpWVQX7EOiTersjmN0Pq2wRNXkK582z55WdYLAiCQEpKCp\/2649Go\/ndg+\/H9lUpSzuVXc8b1G+ZzWYrbc8kJzMzE9HGUcgWuSFZ4Ir60ByMBkfbD6vNhtFgQKlUEnXhPPF348mLWI1kXhOkvq4o1g9Cr1Fis1gdpXwPTFGz0YhKpeRSbBwt3JqzedMmLL8TpfwtGuv\/npWNDJ1O5yiOSbmDdGlHlIuaI13UEp1ChNVicfRB0GnIzc6hhbs7gwYNJDkxkeJTa5H6NEfi0xhVxDKMBmPpOm3DZrNjsZjRaHUUlIjx952Hu5s7X039CoPx8e1E\/hHw4AHpmFpNXm4Oeac3Il3UFOn8JmiSL2A0GzEaTEjlUjaHraOJWwuaubuxwHseqffTKT4WgMjHFdm8xmgKUjAazViMJgyCEZVKgTg\/m9Qf19OkyVu0bNWK+Q+8h+O37B8Fr0z5KZFJyM7KQrRxFNKFTZCv649eq0OrVVNYWEif93vSwr0FLVu4MWDApxQWFpKVlUXJ7umIfRoj9X8HhViETCpjz46t3PLuTsncZgzv0hy35s14t\/u75OXlYDI9vpfoPwYePKz8LC4pJic+DqmvqyObknETiUTK9RvXaNnKgzZtWtO2bRvGeY5FIVcgEYvJyrxPyY4pSHyaIPN1R+bXhuFvv0U398a0dm9GixYtmDRpEvHx8eh0ut9V0f\/j4NlsNkyl2ebc3DxEhxchXeCKJHw5P+3dyiKvgbRp3Yp27drQpo0H+\/c73pem0zpKWrOSbiNd5EH8N80Z1bkp7m+9QfOmjXm\/1\/vs2bOHoqKih5ruP87+UfDKzGazYRB0iCRi7qclI17anpw5zRn5rgetPDzo0LE9HTu2Z9q0r8pfQGIymVEpleTm5HFphz8t3N1o1qwJPbq\/y4b1YWRn56JQKNDrH53hfpT9I+Fhs2OyWFGqlOTkZFO0ehABg9rj4dGatzt2pGfP9\/D3X4xIJHIIuUvPRwx6PSJxCceOH8ethTtvvP4aa7\/9FpGoBI1G9ytty+\/ZPxKeHRs2qxWdTqAwv4CvJk+mhYcHrdya07fv+9y5c6v85SEPwjCbjajVaooLCrlx4wZ9e\/fljf+8zu0bNzFafj77+H8NDx58M4KYjRs38tprr9GoUSNOnz6FQqEoH3EPQihztstKWAsKCjh8+DBSqfTZG+v\/k6ws26xQKMjKymL27Nm8+uqrRERE\/Gb\/4wfLGsrOnXU63WNfyvQ4+0fDK2uMKJFIyM\/PZ9KkiXh7z\/vdRoNlv1umcnjajPc\/Gl5Z2KbX61EqlUilUvR6\/RPnFp81Vv\/HwiuzBxWpjszyn\/diuX88PPh1BujPyvz8v4D3V9n\/C3h\/RY4R4P8AJM4zba6JNUcAAAAASUVORK5CYII=\" width=\"79\" height=\"105\" \/><\/div>\r\n<div class=\"pre\"><span style=\"font-family: tahoma, arial, helvetica, sans-serif; color: #ff9900\">Adeline Cl\u00e8re<\/span><br \/><span style=\"font-family: tahoma, arial, helvetica, sans-serif; color: #008000\">-----------------<\/span><br \/><span style=\"font-family: tahoma, arial, helvetica, sans-serif; color: #008000\">0 66 22 99 5 84<\/span><br \/><span style=\"font-family: tahoma, arial, helvetica, sans-serif; color: #000000\"><a style=\"color: #000000\" href=\"mailto:adeline@clere.me\">adeline@clere.me<\/a><\/span><br \/><span style=\"font-family: tahoma, arial, helvetica, sans-serif; color: #000000\">adeline-clere.fr<\/span><\/div>"}},"identities":{"2":{"email":"adeline@clere.me"}},"autocomplete_max":15,"autocomplete_min_length":1,"composebody":"composebody","editor_config":{"mode":"","lang":"fr_FR","skin_path":"skins\/larry","spellcheck":1,"spelldict":0,"disabled_plugins":[],"disabled_buttons":[],"extra_plugins":[],"extra_buttons":[]},"spell_langs":{"ar":"Arabic (\u0627\u0644\u0639\u0631\u0628\u064a\u0629)","am":"Armenian (\u0540\u0561\u0575\u0565\u0580\u0565\u0576)","eu":"Basque (Euskara)","br":"Breton (Brezhoneg)","bg":"Bulgarian (\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438)","ca":"Catalan (Catal\u00e0)","hr":"Croatian (Hrvatski)","cs":"Czech (\u010cesky)","da":"Danish (Dansk)","nl":"Dutch (Nederlands)","en_GB":"English (GB)","en_US":"English (US)","eo":"Esperanto","et":"Estonian (Eesti)","fi":"Finnish (Suomi)","fr_FR":"French (Fran\u00e7ais)","gl":"Galician (Galego)","de_DE":"German (Deutsch)","de_CH":"German (Schweiz)","el":"Greek (\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac)","he":"Hebrew (\u05e2\u05d1\u05e8\u05d9\u05ea)","hu":"Hungarian (Magyar)","is":"Icelandic (\u00cdslenska)","ga":"Irish (Gaedhilge)","it":"Italian (Italiano)","ku":"Kurdish (Kurmanc\u00ee)","lv":"Latvian (Latvie\u0161u)","lt":"Lithuanian (Lietuvi\u0161kai)","fa":"Persian (\u0641\u0627\u0631\u0633\u06cc)","pl":"Polish (Polski)","pt_BR":"Portuguese (Brasil)","pt_PT":"Portuguese (Portugu\u00eas)","ro":"Romanian (Rom\u00e2ne\u015fte)","ru":"Russian (\u0420\u0443\u0441\u0441\u043a\u0438\u0439)","sk":"Slovak (Sloven\u010dina)","sl":"Slovenian (Sloven\u0161\u010dina)","es":"Spanish (Espa\u00f1ol)","sv":"Swedish (Svenska)","uk":"Ukrainian (\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430)","cy":"Welsh (Cymraeg)"},"spell_lang":"fr_FR","spellcheck_langs":"Arabic (\u0627\u0644\u0639\u0631\u0628\u064a\u0629)=ar,Armenian (\u0540\u0561\u0575\u0565\u0580\u0565\u0576)=am,Basque (Euskara)=eu,Breton (Brezhoneg)=br,Bulgarian (\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438)=bg,Catalan (Catal\u00e0)=ca,Croatian (Hrvatski)=hr,Czech (\u010cesky)=cs,Danish (Dansk)=da,Dutch (Nederlands)=nl,English (GB)=en_GB,English (US)=en_US,Esperanto=eo,Estonian (Eesti)=et,Finnish (Suomi)=fi,+French (Fran\u00e7ais)=fr_FR,Galician (Galego)=gl,German (Deutsch)=de_DE,German (Schweiz)=de_CH,Greek (\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac)=el,Hebrew (\u05e2\u05d1\u05e8\u05d9\u05ea)=he,Hungarian (Magyar)=hu,Icelandic (\u00cdslenska)=is,Irish (Gaedhilge)=ga,Italian (Italiano)=it,Kurdish (Kurmanc\u00ee)=ku,Latvian (Latvie\u0161u)=lv,Lithuanian (Lietuvi\u0161kai)=lt,Persian (\u0641\u0627\u0631\u0633\u06cc)=fa,Polish (Polski)=pl,Portuguese (Brasil)=pt_BR,Portuguese (Portugu\u00eas)=pt_PT,Romanian (Rom\u00e2ne\u015fte)=ro,Russian (\u0420\u0443\u0441\u0441\u043a\u0438\u0439)=ru,Slovak (Sloven\u010dina)=sk,Slovenian (Sloven\u0161\u010dina)=sl,Spanish (Espa\u00f1ol)=es,Swedish (Svenska)=sv,Ukrainian (\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430)=uk,Welsh (Cymraeg)=cy","attachments":{"rcmfile21520412768029517100":{"name":"header_150.jpg","complete":true,"mimetype":"image\/jpeg"},"rcmfile21520412768030968700":{"name":"header_300.jpg","complete":true,"mimetype":"image\/jpeg"}},"filedrop":{"action":"upload","fieldname":"_attachments"},"max_filesize":33554432,"filesizeerror":"Le fichier t\u00e9l\u00e9vers\u00e9 d\u00e9passe la taille maximale de 32 Mo.","textresponses":[],"request_token":"GGoF4i19ZU7zA2BoQZNu1vwH2tfZTFhx"});
+rcmail.add_label({"loading":"Chargement...","servererror":"Erreur de serveur !","connerror":"Erreur de connexion (n'a pu atteindre le serveur) !","requesttimedout":"D\u00e9lai de la requ\u00eate expir\u00e9","refreshing":"Actualisation...","windowopenerror":"La fen\u00eatre contextuelle a \u00e9t\u00e9 bloqu\u00e9e !","uploadingmany":"T\u00e9l\u00e9versement des fichiers...","nosubject":"(pas d'objet)","nosenderwarning":"Veuillez saisir l'adresse courriel de l'exp\u00e9diteur.","norecipientwarning":"Veuillez saisir au moins un destinataire.","nosubjectwarning":"Le champ \u00ab Objet \u00bb est vide. Voudriez-vous le saisir maintenant ?","cancel":"Annuler","nobodywarning":"Envoyer ce courriel sans texte ?","notsentwarning":"Le courriel n'a pas \u00e9t\u00e9 envoy\u00e9. Voulez-vous abandonner ce courriel ?","notuploadedwarning":"Toutes les pi\u00e8ces jointes n'ont pas encore \u00e9t\u00e9 t\u00e9l\u00e9vers\u00e9es. Veuillez patienter ou annuler le t\u00e9l\u00e9versement.","savingmessage":"Enregistrement du courriel...","sendingmessage":"Envoi du courriel...","messagesaved":"Courriel sauvegard\u00e9 dans Brouillons.","converting":"Suppression de la mise en forme...","editorwarning":"Changer de type d'\u00e9diteur pourrait causer la perte du formatage du texte. Souhaitez-vous continuer ?","searching":"Recherche...","uploading":"T\u00e9l\u00e9versement du fichier...","fileuploaderror":"\u00c9chec lors du t\u00e9l\u00e9versement du fichier","sendmessage":"Envoyer un courriel","newresponse":"Cr\u00e9er une nouvelle r\u00e9ponse","responsename":"Nom","responsetext":"Texte de la r\u00e9ponse","save":"Enregistrer","savingresponse":"Enregistrement du texte de r\u00e9ponse...","restoresavedcomposedata":"Un courriel r\u00e9dig\u00e9 pr\u00e9c\u00e9demment mais non envoy\u00e9 a \u00e9t\u00e9 trouv\u00e9.\n\nObjet : $subject\nEnregistr\u00e9 le : $date\n\nVoulez-vous restaurer ce courriel ?","restoremessage":"Restaurer le courriel ?","delete":"Supprimer","restore":"Restaurer","ignore":"Ignorer","selectimportfile":"Veuillez choisir un fichier \u00e0 t\u00e9l\u00e9verser.","messageissent":"Le courriel a d\u00e9j\u00e0 \u00e9t\u00e9 envoy\u00e9, mais n'a pas encore \u00e9t\u00e9 enregistr\u00e9. Voulez-vous le faire maintenant ?","loadingdata":"Chargement des donn\u00e9es...","nopubkeyfor":"Aucune cl\u00e9 publique valide trouv\u00e9e pour $email","nopubkeyforsender":"Aucune cl\u00e9 publique valide trouv\u00e9e pour votre identit\u00e9 d'exp\u00e9diteur. Voulez-vous chiffrer le courriel uniquement pour les destinataires ?","encryptnoattachments":"Les pi\u00e8ces jointes d\u00e9j\u00e0 t\u00e9l\u00e9vers\u00e9es ne peuvent pas \u00eatre chiffr\u00e9es.  Veuillez les ajouter de nouveau dans l'\u00e9diteur de chiffrement.","encryptedsendialog":"Envoi du message chiffr\u00e9","searchpubkeyservers":"Voulez-vous chercher les cl\u00e9s manquantes sur les serveurs de cl\u00e9s publiques ?","importpubkeys":"Importer des cl\u00e9s publiques","encryptpubkeysfound":"Les cl\u00e9s publiques suivantes ont \u00e9t\u00e9 trouv\u00e9es :","search":"Recherche","close":"Fermer","import":"Importer","keyid":"ID de la cl\u00e9","keylength":"bits","keyexpired":"Expir\u00e9e","keyrevoked":"R\u00e9voqu\u00e9e","keyimportsuccess":"La cl\u00e9 publique $key a \u00e9t\u00e9 import\u00e9e dans le trousseau avec succ\u00e8s","keyservererror":"\u00c9chec d'obtention de la cl\u00e9 \u00e0 partir du serveur de cl\u00e9s","attaching":"Ajout du fichier...","errortitle":"Une erreur est survenue !","toggleadvancedoptions":"Activer\/d\u00e9sactiver les options avanc\u00e9es","autocompletechars":"Saisir au moins $min caract\u00e8res pour le remplissage automatique.","autocompletemore":"Plusieurs entr\u00e9es concordantes trouv\u00e9es. Veuillez taper plus de caract\u00e8res.","selectimage":"S\u00e9lectionner l'image","addimage":"Ajouter une image","selectmedia":"Choisir un film","addmedia":"Ajouter un film","checking":"V\u00e9rification..."});
+rcmail.gui_container("topline-left","topline-left");
+rcmail.gui_container("topline-center","topline-center");
+rcmail.gui_container("topline-right","topline-right");
+rcmail.gui_container("taskbar","taskbar");
+rcmail.gui_container("toolbar","compose-toolbar");
+rcmail.gui_container("composeoptions","composeoptions");
+rcmail.register_button('logout', 'rcmbtn101', 'link', '', '', '');
+rcmail.register_button('mail', 'rcmbtn102', 'link', '', 'button-mail button-selected', '');
+rcmail.register_button('addressbook', 'rcmbtn103', 'link', '', 'button-addressbook button-selected', '');
+rcmail.register_button('settings', 'rcmbtn104', 'link', '', 'button-settings button-selected', '');
+rcmail.register_button('logout', 'rcmbtn105', 'link', '', 'button-logout', '');
+rcmail.register_button('list', 'rcmbtn106', 'link', 'button back', '', '');
+rcmail.register_button('send', 'rcmbtn107', 'link', 'button send', '', '');
+rcmail.register_button('savedraft', 'rcmbtn108', 'link', 'button savedraft', '', '');
+rcmail.register_button('spellcheck', 'rcmbtn109', 'link', 'button spellcheck', 'button spellcheck pressed', '');
+rcmail.register_button('insert-sig', 'rcmbtn111', 'link', 'button insertsig', '', '');
+rcmail.register_button('compose-encrypted', 'rcmbtn112', 'link', 'button encrypt', 'button encrypt selected', '');
+rcmail.gui_object('qsearchbox', 'contactsearchbox');
+rcmail.register_button('reset-search', 'rcmbtn113', 'link', '', '', '');
+rcmail.gui_object('addressbookslist', 'directorylist');
+rcmail.gui_object('contactslist', 'contacts-table');
+rcmail.register_button('add-recipient', 'rcmbtn114', 'link', 'listbutton addto', '', '');
+rcmail.register_button('add-recipient', 'rcmbtn115', 'link', 'listbutton addcc', '', '');
+rcmail.register_button('add-recipient', 'rcmbtn116', 'link', 'listbutton addbcc', '', '');
+rcmail.register_button('firstpage', 'rcmbtn117', 'link', 'icon firstpage', '', '');
+rcmail.register_button('previouspage', 'rcmbtn118', 'link', 'icon prevpage', '', '');
+rcmail.register_button('nextpage', 'rcmbtn119', 'link', 'icon nextpage', '', '');
+rcmail.register_button('lastpage', 'rcmbtn120', 'link', 'icon lastpage', '', '');
+rcmail.gui_object('messageform', 'form');
+rcmail.register_button('extwin', 'rcmbtn121', 'link', '', 'button extwin pressed', '');
+rcmail.gui_object('attachmentlist', 'attachment-list');
+rcmail.gui_object('filedrop', 'compose-attachments');
+rcmail.register_button('send', 'rcmbtn123', 'input', '', '', '');
+rcmail.register_button('savedraft', 'rcmbtn124', 'input', '', '', '');
+rcmail.register_button('list', 'rcmbtn125', 'input', '', '', '');
+rcmail.gui_object('uploadform', 'uploadformFrm');
+rcmail.register_button('send-attachment', 'rcmbtn126', 'input', '', '', '');
+rcmail.gui_object('responseslist', 'responseslist');
+rcmail.register_button('save-response', 'rcmbtn128', 'link', 'active', '', '');
+rcmail.register_button('responses', 'rcmbtn129', 'link', 'active', '', '');
+rcmail.gui_object('message', 'messagestack');
+</script>
+
+<script type="text/javascript" src="./Roundcube Webmail __ Rédiger_files/jquery-ui-1.10.4.custom.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Roundcube Webmail __ Rédiger_files/jquery.ui.datepicker-fr.js.téléchargement"></script>
+<link rel="stylesheet" type="text/css" id="u0" href="./Roundcube Webmail __ Rédiger_files/skin.min.css"></head>
+<body waid71fa0d88-5390-4b5b-a2f4-e45fa93d85e2="SA password protect entry checker">
+<script type="text/javascript">
+var UI = new rcube_mail_ui();
+</script>
+
+<div id="header">
+<div id="topline" role="banner" aria-labelledby="aria-label-topnav">
+	<h2 id="aria-label-topnav" class="voice">Contrôle de la fenêtre</h2>
+	<div class="topleft">
+		
+					<a class="about-link" onclick="UI.show_about(this);return false" id="rcmbtn100" role="button" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#">À propos de</a>
+					</div>
+	
+	<div class="topright">
+	
+			<span class="username">adeline@clere.me</span>
+		<a class="button-logout" id="rcmbtn101" role="button" href="http://webmail.clere.me/?_task=logout" onclick="return rcmail.command(&#39;switch-task&#39;,&#39;logout&#39;,this,event)" tabindex="0" aria-disabled="false">Déconnexion</a>
+	
+	</div>
+</div>
+<div id="topnav">
+	<h2 id="aria-label-tasknav" class="voice">Tâches de l'application</h2>
+	<div id="taskbar" class="topright" role="navigation" aria-labelledby="aria-label-tasknav">
+		<a class="button-mail button-selected" id="rcmbtn102" role="button" href="http://webmail.clere.me/?_task=mail" onclick="return rcmail.command(&#39;switch-task&#39;,&#39;mail&#39;,this,event)" tabindex="-1" aria-disabled="true"><span class="button-inner">Courriel</span><span class="tooltip">Courriel</span></a>
+		<a class="button-addressbook" id="rcmbtn103" role="button" href="http://webmail.clere.me/?_task=addressbook" onclick="return rcmail.command(&#39;switch-task&#39;,&#39;addressbook&#39;,this,event)" tabindex="0" aria-disabled="false"><span class="button-inner">Carnet d'adresses</span><span class="tooltip">Carnet d'adresses</span></a>
+		
+		<a class="button-settings" id="rcmbtn104" role="button" href="http://webmail.clere.me/?_task=settings" onclick="return rcmail.command(&#39;switch-task&#39;,&#39;settings&#39;,this,event)" tabindex="0" aria-disabled="false"><span class="button-inner">Paramètres</span><span class="tooltip">Paramètres</span></a>
+		<a class="button-logout" id="rcmbtn105" role="button" href="http://webmail.clere.me/?_task=logout" onclick="return rcmail.command(&#39;switch-task&#39;,&#39;logout&#39;,this,event)" tabindex="0" aria-disabled="false"><span class="button-inner">Déconnexion</span><span class="tooltip">Déconnexion</span></a>
+		<span class="minmodetoggle" role="presentation"></span>
+	</div>
+	<img src="./Roundcube Webmail __ Rédiger_files/roundcube_logo.png" id="toplogo" alt="Logo" onclick="if(window.rcmail)rcmail.command(&#39;switch-task&#39;,&#39;mail&#39;)">
+</div>
+
+<br style="clear:both">
+</div>
+
+
+<div id="mainscreen">
+
+<h1 class="voice">Roundcube Webmail :: Rédiger</h1>
+
+<!-- toolbar -->
+<h2 id="aria-label-toolbar" class="voice">Barre d'outils de l'application</h2>
+<div id="messagetoolbar" class="toolbar fullwidth" role="toolbar" aria-labelledby="aria-label-toolbar">
+	<a class="button back" tabindex="2" id="rcmbtn106" role="button" data-tabindex="2" aria-disabled="false" href="http://webmail.clere.me/?_task=mail&amp;_action=list" onclick="return rcmail.command(&#39;list&#39;,&#39;&#39;,this,event)">Annuler</a>
+	
+	<span class="spacer"></span>
+	<a class="button send" title="Envoyer un courriel" tabindex="2" id="rcmbtn107" role="button" data-tabindex="2" aria-disabled="false" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;send&#39;,&#39;&#39;,this,event)">Envoyer</a>
+	<a class="button savedraft" title="Enregistrer comme brouillon" tabindex="2" id="rcmbtn108" role="button" data-tabindex="2" aria-disabled="false" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;savedraft&#39;,&#39;&#39;,this,event)">Enregistrer</a>
+	<span class="spacer"></span>
+		<span class="dropbutton">
+		<a class="button spellcheck" title="Vérification de l&#39;orthographe" tabindex="2" id="rcmbtn109" role="button" data-tabindex="2" aria-disabled="false" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;spellcheck&#39;,&#39;&#39;,this,event)">Orthographe</a>
+		<a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#languages" class="dropbuttontip" id="spellmenulink" onclick="UI.toggle_popup(&#39;spellmenu&#39;,event);return false" aria-haspopup="true" aria-expanded="false" tabindex="2">Select Spell Language</a>
+	</span>
+		<a class="button attach" title="Joindre un fichier" onclick="UI.show_uploadform(event);return false" aria-haspopup="true" aria-expanded="false" tabindex="2" id="rcmbtn110" role="button" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#">Joindre</a>
+	<a class="button insertsig" title="Insérer la signature" tabindex="2" id="rcmbtn111" role="button" data-tabindex="2" aria-disabled="false" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;insert-sig&#39;,&#39;&#39;,this,event)">Signature</a>
+	<a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#responses" class="button responses" label="responses" title="Insérer une réponse" id="responsesmenulink" unselectable="on" onmousedown="return false" onclick="UI.toggle_popup(&#39;responsesmenu&#39;,event);return false" tabindex="2" aria-haspopup="true" aria-expanded="false" aria-owns="textresponsesmenu">Réponses</a>
+	<a class="button encrypt disabled" title="Chiffrer le message avec Mailvelope" tabindex="-1" style="display:none" id="rcmbtn112" role="button" data-tabindex="2" aria-disabled="true" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;compose-encrypted&#39;,&#39;&#39;,this,event)">Chiffrer</a>
+	
+</div>
+
+<div id="mainscreencontent">
+
+<div id="composeview-left" style="width: 200px;">
+
+<!-- inline address book -->
+<div id="compose-contacts" class="uibox listbox" role="region" aria-labelledby="aria-label-composecontacts">
+<h2 id="aria-label-composecontacts" class="boxtitle">Contacts</h2>
+	<div class="listsearchbox" role="search" aria-labelledby="aria-label-composequicksearch">
+		<h3 id="aria-label-composequicksearch" class="voice">Formulaire de recherche de contacts</h3>
+		<div class="searchbox">
+			<label for="contactsearchbox" class="voice">Saisie de la recherche de contacts</label>
+			<form name="rcmqsearchform" onsubmit="rcmail.command(&#39;search&#39;); return false" style="display:inline" action="http://webmail.clere.me/?_task=mail" method="get"><input name="_q" id="contactsearchbox" type="text"></form>
+
+			<a id="searchmenulink" class="iconbutton searchicon"> </a>
+			<a class="iconbutton reset" title="Réinitialiser la recherche" id="rcmbtn113" role="button" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;reset-search&#39;,&#39;&#39;,this,event)" tabindex="0" aria-disabled="false"> </a>
+		</div>
+	</div>
+	<ul id="directorylist" class="treelist listing"><li id="rcmliMA" class="addressbook"><a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#list" rel="0" onclick="return rcmail.command(&#39;list-addresses&#39;,&#39;0&#39;,this)">Adresses personnelles</a></li>
+</ul>
+
+	<div class="scroller withfooter" tabindex="-1" style="top: 98.9514px;">
+		<table id="contacts-table" class="listing iconized" role="listbox" aria-multiselectable="true" tabindex="0"><tbody></tbody></table>
+
+	</div>
+<div class="boxfooter">
+	<a title="À" class="listbutton addto disabled" id="rcmbtn114" role="button" tabindex="-1" aria-disabled="true" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;add-recipient&#39;,&#39;to&#39;,this,event)"><span class="inner">To+</span></a><a title="Cc" class="listbutton addcc disabled" id="rcmbtn115" role="button" tabindex="-1" aria-disabled="true" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;add-recipient&#39;,&#39;cc&#39;,this,event)"><span class="inner">Cc+</span></a><a title="Cci" class="listbutton addbcc disabled" id="rcmbtn116" role="button" tabindex="-1" aria-disabled="true" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;add-recipient&#39;,&#39;bcc&#39;,this,event)"><span class="inner">Bcc+</span></a>
+</div>
+<div class="boxpagenav">
+	<a class="icon firstpage disabled" title="Afficher la première page" id="rcmbtn117" role="button" tabindex="-1" aria-disabled="true" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;firstpage&#39;,&#39;&#39;,this,event)">Premier</a>
+	<a class="icon prevpage disabled" title="Afficher page précédente" id="rcmbtn118" role="button" tabindex="-1" aria-disabled="true" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;previouspage&#39;,&#39;&#39;,this,event)">Précédent</a>
+	<a class="icon nextpage disabled" title="Afficher la page suivante" id="rcmbtn119" role="button" tabindex="-1" aria-disabled="true" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;nextpage&#39;,&#39;&#39;,this,event)">Suivant</a>
+	<a class="icon lastpage disabled" title="Afficher la dernière page" id="rcmbtn120" role="button" tabindex="-1" aria-disabled="true" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;lastpage&#39;,&#39;&#39;,this,event)">Dernier</a>
+</div>
+</div>
+
+</div>
+
+<div id="composeview-right" role="main" style="left: 212px;">
+
+<form name="form" method="post" id="compose-content" class="uibox" action="http://webmail.clere.me/?_task=mail" style="overflow: hidden;">
+<input type="hidden" name="_token" value="GGoF4i19ZU7zA2BoQZNu1vwH2tfZTFhx">
+
+<!-- message headers -->
+<div id="composeheaders" role="region" aria-labelledby="aria-label-composeheaders">
+<h2 id="aria-label-composeheaders" class="voice">En-tête des courriels</h2>
+
+<a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#options" id="composeoptionstoggle" class="moreheaderstoggle remove" title="Activer/désactiver les options de rédaction" aria-expanded="true" style="cursor: pointer;"><span class="iconlink"></span></a>
+
+<table class="headers-table compose-headers">
+<tbody>
+	<tr>
+		<td class="title"><label for="_from">De</label></td>
+		<td class="editfield">
+			<input type="hidden" name="_task" value="mail"><input type="hidden" name="_action" value="send"><input type="hidden" name="_id" value="1768324325a9fa86023cf3"><input type="hidden" name="_attachments"><select name="_from" id="_from" tabindex="1" onchange="rcmail.change_identity(this)">
+<option value="2" selected="selected">Adeline Clere &lt;adeline@clere.me&gt;</option>
+</select>
+
+			<a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#identities" onclick="return rcmail.command(&#39;identities&#39;)" class="iconlink edit" tabindex="0">Éditer les identités</a>
+		</td>
+	</tr><tr>
+		<td class="title top"><label for="_to">À</label></td>
+		<td class="editfield"><textarea name="_to" spellcheck="false" id="_to" cols="70" rows="1" tabindex="1" autocomplete="off" aria-autocomplete="list" aria-expanded="false" role="combobox" style="height: 14px;">adel &lt;a2line8@yahoo.fr&gt;</textarea>
+</td>
+	</tr><tr id="compose-cc">
+		<td class="title top">
+			<label for="_cc">Cc</label>
+			<a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#cc" onclick="return UI.hide_header_row(&#39;cc&#39;);" class="iconbutton cancel" title="Supprimer" tabindex="3">Supprimer Cc</a>
+		</td>
+		<td class="editfield"><textarea name="_cc" spellcheck="false" id="_cc" cols="70" rows="1" tabindex="1" autocomplete="off" aria-autocomplete="list" aria-expanded="false" role="combobox" style="height: 14px;"></textarea></td>
+	</tr><tr id="compose-bcc">
+		<td class="title top">
+			<label for="_bcc">Cci</label>
+			<a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#bcc" onclick="return UI.hide_header_row(&#39;bcc&#39;);" class="iconbutton cancel" title="Supprimer" tabindex="3">Supprimer Cci</a>
+		</td>
+		<td class="editfield"><textarea name="_bcc" spellcheck="false" id="_bcc" cols="70" rows="1" tabindex="1" autocomplete="off" aria-autocomplete="list" aria-expanded="false" role="combobox" style="height: 14px;"></textarea></td>
+	</tr><tr id="compose-replyto">
+		<td class="title top">
+			<label for="_replyto">Répondre à</label>
+			<a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#replyto" onclick="return UI.hide_header_row(&#39;replyto&#39;);" class="iconbutton cancel" title="Supprimer" tabindex="3">Supprimer Répondre à</a>
+		</td>
+		<td class="editfield"><input name="_replyto" spellcheck="false" id="_replyto" size="70" tabindex="1" value="" type="text" autocomplete="off" aria-autocomplete="list" aria-expanded="false" role="combobox"></td>
+	</tr><tr id="compose-followupto">
+		<td class="title top">
+			<label for="_followupto">Faire suivre à</label>
+			<a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#followupto" onclick="return UI.hide_header_row(&#39;followupto&#39;);" class="iconbutton cancel" title="Supprimer" tabindex="3">Supprimer Faire suivre à</a>
+		</td>
+		<td class="editfield"><input name="_followupto" spellcheck="false" id="_followupto" size="70" tabindex="1" value="" type="text" autocomplete="off" aria-autocomplete="list" aria-expanded="false" role="combobox"></td>
+	</tr><tr>
+		<td></td>
+		<td class="formlinks">
+			<a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#cc" onclick="return UI.show_header_row(&#39;cc&#39;)" id="cc-link" class="iconlink add" tabindex="3">Ajouter Cc</a>
+			<a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#bcc" onclick="return UI.show_header_row(&#39;bcc&#39;)" id="bcc-link" class="iconlink add" tabindex="3">Ajouter Cci</a>
+			<a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#reply-to" onclick="return UI.show_header_row(&#39;replyto&#39;)" id="replyto-link" class="iconlink add" tabindex="3">Ajouter Répondre à</a>
+			<a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#followup-to" onclick="return UI.show_header_row(&#39;followupto&#39;)" id="followupto-link" class="iconlink add" tabindex="3">Ajouter Transférer à</a>
+		</td>
+	</tr><tr>
+		<td class="title"><label for="compose-subject">Objet</label></td>
+		<td class="editfield"><input name="_subject" id="compose-subject" tabindex="1" spellcheck="true" value="PIGE SITE PERSO" type="text"></td>
+	</tr>
+</tbody>
+</table>
+
+<div id="composebuttons" class="formbuttons">
+	<a class="button extwin" title="Ouvrir dans une nouvelle fenêtre" id="rcmbtn121" role="button" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;extwin&#39;,&#39;&#39;,this,event)" tabindex="0" aria-disabled="false"><span class="icon">Ouvrir dans une nouvelle fenêtre</span></a>
+</div>
+
+<!-- (collapsable) message options -->
+<div id="composeoptions" role="region" aria-labelledby="aria-label-composeoptions" style="display: block;">
+	<h2 id="aria-label-composeoptions" class="voice">Options de rédaction</h2>
+		<span class="composeoption">
+		<label>Type d'éditeur
+			<select name="editorSelector" tabindex="4" onchange="return rcmail.command(&#39;toggle-editor&#39;, {id: &#39;composebody&#39;, html: this.value == &#39;html&#39;}, &#39;&#39;, event)">
+<option value="html" selected="selected">HTML</option>
+<option value="plain">Texte en clair</option>
+</select>
+</label>
+	</span>
+		<span class="composeoption">
+		<label for="rcmcomposepriority">Priorité
+			<select name="_priority" id="rcmcomposepriority" tabindex="4">
+<option value="5">La plus basse</option>
+<option value="4">Basse</option>
+<option value="0" selected="selected">Normale</option>
+<option value="2">Élevée</option>
+<option value="1">La plus élevée</option>
+</select>
+</label>
+	</span>
+		<span class="composeoption">
+		<label><input name="_mdn" id="rcmcomposereceipt" tabindex="4" value="1" type="checkbox"> Avis de réception</label>
+	</span>
+			<span class="composeoption">
+		<label><input name="_dsn" id="rcmcomposedsn" tabindex="4" value="1" type="checkbox"> Notification d'état de distribution</label>
+	</span>
+			<span class="composeoption">
+		<label>Enregistrer le courriel envoyé dans <select name="_store_target" style="max-width:12em" tabindex="4">
+<option value="">- ne pas enregistrer -</option>
+<option value="INBOX">Boîte de réception</option>
+<option value="INBOX.Drafts">Brouillons</option>
+<option value="INBOX.Sent" selected="selected">Envoyés</option>
+<option value="INBOX.Spam">Pourriels</option>
+<option value="INBOX.Trash">Corbeille</option>
+<option value="INBOX.Trash.AL">&nbsp;&nbsp;&nbsp;&nbsp;AL</option>
+<option value="INBOX.Trash.A TRIER">&nbsp;&nbsp;&nbsp;&nbsp;A TRIER</option>
+<option value="INBOX.Trash.Courrier entrant">&nbsp;&nbsp;&nbsp;&nbsp;Courrier entrant</option>
+<option value="INBOX.Trash.Courrier entrant.Corbeille">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Corbeille</option>
+<option value="INBOX.Trash.Deleted Messages">&nbsp;&nbsp;&nbsp;&nbsp;Deleted Messages</option>
+<option value="INBOX.Trash.FONGECIF">&nbsp;&nbsp;&nbsp;&nbsp;FONGECIF</option>
+<option value="INBOX.Trash.FORMATION-ORIENTATION">&nbsp;&nbsp;&nbsp;&nbsp;FORMATION-ORIENTATION</option>
+<option value="INBOX.Trash.Junk">&nbsp;&nbsp;&nbsp;&nbsp;Junk</option>
+<option value="INBOX.Trash.MANAGER DE T">&nbsp;&nbsp;&nbsp;&nbsp;MANAGER DE T</option>
+<option value="INBOX.Trash.MDA">&nbsp;&nbsp;&nbsp;&nbsp;MDA</option>
+<option value="INBOX.Trash.Spam">&nbsp;&nbsp;&nbsp;&nbsp;Spam</option>
+<option value="INBOX.ADMIN">ADMIN</option>
+<option value="INBOX.ADMIN.APPART">&nbsp;&nbsp;&nbsp;&nbsp;APPART</option>
+<option value="INBOX.ADMIN.AUTO-ENTREPR">&nbsp;&nbsp;&nbsp;&nbsp;AUTO-ENTREPR</option>
+<option value="INBOX.ADMIN.BOURSORAMA">&nbsp;&nbsp;&nbsp;&nbsp;BOURSORAMA</option>
+<option value="INBOX.ADMIN.CE">&nbsp;&nbsp;&nbsp;&nbsp;CE</option>
+<option value="INBOX.ADMIN.CMA">&nbsp;&nbsp;&nbsp;&nbsp;CMA</option>
+<option value="INBOX.ADMIN.IMPOTS">&nbsp;&nbsp;&nbsp;&nbsp;IMPOTS</option>
+<option value="INBOX.ADMIN.LOC LANNION">&nbsp;&nbsp;&nbsp;&nbsp;LOC LANNION</option>
+<option value="INBOX.ADMIN.LOGT SOCIAL">&nbsp;&nbsp;&nbsp;&nbsp;LOGT SOCIAL</option>
+<option value="INBOX.ADMIN.MAC">&nbsp;&nbsp;&nbsp;&nbsp;MAC</option>
+<option value="INBOX.ADMIN.MAC.APPLE">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APPLE</option>
+<option value="INBOX.ADMIN.MDA">&nbsp;&nbsp;&nbsp;&nbsp;MDA</option>
+<option value="INBOX.ADMIN.RETRAITE">&nbsp;&nbsp;&nbsp;&nbsp;RETRAITE</option>
+<option value="INBOX.ADMIN.RSI">&nbsp;&nbsp;&nbsp;&nbsp;RSI</option>
+<option value="INBOX.ADMIN.SPORT">&nbsp;&nbsp;&nbsp;&nbsp;SPORT</option>
+<option value="INBOX.ADMISSIONS">ADMISSIONS</option>
+<option value="INBOX.ADMISSIONS.BDC-FACTURE">&nbsp;&nbsp;&nbsp;&nbsp;BDC-FACTURE</option>
+<option value="INBOX.ADMISSIONS.CONTRATS">&nbsp;&nbsp;&nbsp;&nbsp;CONTRATS</option>
+<option value="INBOX.ADMISSIONS.EXPERTHEQUE">&nbsp;&nbsp;&nbsp;&nbsp;EXPERTHEQUE</option>
+<option value="INBOX.ADMISSIONS.FORMATION">&nbsp;&nbsp;&nbsp;&nbsp;FORMATION</option>
+<option value="INBOX.ADMISSIONS.FRAIS">&nbsp;&nbsp;&nbsp;&nbsp;FRAIS</option>
+<option value="INBOX.Archive">Archive</option>
+<option value="INBOX.Archive.DAVAI">&nbsp;&nbsp;&nbsp;&nbsp;DAVAI</option>
+<option value="INBOX.Archive.DAVID L">&nbsp;&nbsp;&nbsp;&nbsp;DAVID L</option>
+<option value="INBOX.Archive.DTI">&nbsp;&nbsp;&nbsp;&nbsp;DTI</option>
+<option value="INBOX.Archive.DTI.VALERIE">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VALERIE</option>
+<option value="INBOX.Archive.FABRICE">&nbsp;&nbsp;&nbsp;&nbsp;FABRICE</option>
+<option value="INBOX.Archive.FESTICHVAL">&nbsp;&nbsp;&nbsp;&nbsp;FESTICHVAL</option>
+<option value="INBOX.Archive.JULIEN">&nbsp;&nbsp;&nbsp;&nbsp;JULIEN</option>
+<option value="INBOX.Archive.KATHY">&nbsp;&nbsp;&nbsp;&nbsp;KATHY</option>
+<option value="INBOX.Archive.Nicolas Griengel">&nbsp;&nbsp;&nbsp;&nbsp;Nicolas Griengel</option>
+<option value="INBOX.Archive.RECK">&nbsp;&nbsp;&nbsp;&nbsp;RECK</option>
+<option value="INBOX.Deleted Messages">Deleted Messages</option>
+<option value="INBOX.FABIEN">FABIEN</option>
+<option value="INBOX.Junk">Junk</option>
+<option value="INBOX.LIENS">LIENS</option>
+<option value="INBOX.MX">MX</option>
+<option value="INBOX.OVH Wordpress">OVH Wordpress</option>
+<option value="INBOX.POLE E">POLE E</option>
+<option value="INBOX.POLE E.ADDVISEO">&nbsp;&nbsp;&nbsp;&nbsp;ADDVISEO</option>
+<option value="INBOX.POLE E.APEC">&nbsp;&nbsp;&nbsp;&nbsp;APEC</option>
+<option value="INBOX.POLE E.FORMATION">&nbsp;&nbsp;&nbsp;&nbsp;FORMATION</option>
+<option value="INBOX.POLE E.INTERIM">&nbsp;&nbsp;&nbsp;&nbsp;INTERIM</option>
+<option value="INBOX.POLE E.Olivier AZEVEDO">&nbsp;&nbsp;&nbsp;&nbsp;Olivier AZEVEDO</option>
+<option value="INBOX.POLE E.PROSPECTION">&nbsp;&nbsp;&nbsp;&nbsp;PROSPECTION</option>
+<option value="INBOX.POLE E.RECONVERSION">&nbsp;&nbsp;&nbsp;&nbsp;RECONVERSION</option>
+<option value="INBOX.POLE E.RECONVERSION.Digital Village">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Digital Village</option>
+<option value="INBOX.POLE E.RECONVERSION.FONGECIF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FONGECIF</option>
+<option value="INBOX.POLE E.RECONVERSION.WebForce3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WebForce3</option>
+<option value="INBOX.POLE E.REZO">&nbsp;&nbsp;&nbsp;&nbsp;REZO</option>
+<option value="INBOX.POLE E.SITES inscrite">&nbsp;&nbsp;&nbsp;&nbsp;SITES inscrite</option>
+<option value="INBOX.POLE E.SITES inscrite.LINKEDIN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LINKEDIN</option>
+<option value="INBOX.POLE E.SITES inscrite.VIADEO">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VIADEO</option>
+<option value="INBOX.PRO">PRO</option>
+<option value="INBOX.PRO.APRIL">&nbsp;&nbsp;&nbsp;&nbsp;APRIL</option>
+<option value="INBOX.PRO.CEY">&nbsp;&nbsp;&nbsp;&nbsp;CEY</option>
+<option value="INBOX.PRO.ECHAFRANCE">&nbsp;&nbsp;&nbsp;&nbsp;ECHAFRANCE</option>
+<option value="INBOX.PRO.INC">&nbsp;&nbsp;&nbsp;&nbsp;INC</option>
+<option value="INBOX.PRO.LARDONS">&nbsp;&nbsp;&nbsp;&nbsp;LARDONS</option>
+<option value="INBOX.PRO.M &amp;- S">&nbsp;&nbsp;&nbsp;&nbsp;M &amp; S</option>
+<option value="INBOX.PRO.PSV">&nbsp;&nbsp;&nbsp;&nbsp;PSV</option>
+<option value="INBOX.PRO.SCOR">&nbsp;&nbsp;&nbsp;&nbsp;SCOR</option>
+<option value="INBOX.PRO.TDC">&nbsp;&nbsp;&nbsp;&nbsp;TDC</option>
+<option value="INBOX.PRO.UNIVERSITES">&nbsp;&nbsp;&nbsp;&nbsp;UNIVERSITES</option>
+<option value="INBOX.PRO.UNR">&nbsp;&nbsp;&nbsp;&nbsp;UNR</option>
+<option value="INBOX.Sent Messages">Sent Messages</option>
+<option value="INBOX.VAC">VAC</option>
+<option value="INBOX.V&amp;AVI-UX">VŒUX</option>
+<option value="INBOX.VOYAGE">VOYAGE</option>
+</select>
+</label>
+	</span>
+		
+</div>
+
+</div>
+
+<!-- message compose body -->
+<div id="composeview-bottom" style="height: 684.34px;">
+	<div id="composebodycontainer">
+		<label for="composebody" class="voice">Corps du courriel</label>
+		<input type="hidden" name="_draft_saveid" value="10357"><input type="hidden" name="_draft" value="yes"><input type="hidden" name="_is_html" value="1"><input type="hidden" name="_framed" value="1"><div id="mceu_28" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px; width: 1224px;"><div id="mceu_28-body" class="mce-container-body mce-stack-layout"><div id="mceu_29" class="mce-toolbar-grp mce-container mce-panel mce-stack-layout-item mce-first" hidefocus="1" tabindex="-1" role="group"><div id="mceu_29-body" class="mce-container-body mce-stack-layout"><div id="mceu_30" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_30-body" class="mce-container-body mce-flow-layout"><div id="mceu_31" class="mce-container mce-flow-layout-item mce-first mce-btn-group" role="group"><div id="mceu_31-body"><div id="mceu_0" class="mce-widget mce-btn mce-btn-small mce-first" tabindex="-1" aria-labelledby="mceu_0" role="button" aria-label="Bold"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div id="mceu_1" class="mce-widget mce-btn mce-btn-small" tabindex="-1" aria-labelledby="mceu_1" role="button" aria-label="Italic"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div><div id="mceu_2" class="mce-widget mce-btn mce-btn-small mce-last" tabindex="-1" aria-labelledby="mceu_2" role="button" aria-label="Underline"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-underline"></i></button></div></div></div><div id="mceu_32" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_32-body"><div id="mceu_3" class="mce-widget mce-btn mce-btn-small mce-first" tabindex="-1" aria-labelledby="mceu_3" role="button" aria-label="Align left"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignleft"></i></button></div><div id="mceu_4" class="mce-widget mce-btn mce-btn-small" tabindex="-1" aria-labelledby="mceu_4" role="button" aria-label="Align center"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-aligncenter"></i></button></div><div id="mceu_5" class="mce-widget mce-btn mce-btn-small" tabindex="-1" aria-labelledby="mceu_5" role="button" aria-label="Align right"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignright"></i></button></div><div id="mceu_6" class="mce-widget mce-btn mce-btn-small mce-last" tabindex="-1" aria-labelledby="mceu_6" role="button" aria-label="Justify"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignjustify"></i></button></div></div></div><div id="mceu_33" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_33-body"><div id="mceu_7" class="mce-widget mce-btn mce-btn-small mce-first" tabindex="-1" aria-labelledby="mceu_7" role="button" aria-label="Bullet list"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bullist"></i></button></div><div id="mceu_8" class="mce-widget mce-btn mce-btn-small" tabindex="-1" aria-labelledby="mceu_8" role="button" aria-label="Numbered list"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-numlist"></i></button></div><div id="mceu_9" class="mce-widget mce-btn mce-btn-small" tabindex="-1" aria-labelledby="mceu_9" role="button" aria-label="Decrease indent"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-outdent"></i></button></div><div id="mceu_10" class="mce-widget mce-btn mce-btn-small" tabindex="-1" aria-labelledby="mceu_10" role="button" aria-label="Increase indent"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-indent"></i></button></div><div id="mceu_11" class="mce-widget mce-btn mce-btn-small" tabindex="-1" aria-labelledby="mceu_11" role="button" aria-label="Left to right"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-ltr"></i></button></div><div id="mceu_12" class="mce-widget mce-btn mce-btn-small" tabindex="-1" aria-labelledby="mceu_12" role="button" aria-label="Right to left"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-rtl"></i></button></div><div id="mceu_13" class="mce-widget mce-btn mce-btn-small mce-last" tabindex="-1" aria-labelledby="mceu_13" role="button" aria-label="Blockquote"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-blockquote"></i></button></div></div></div><div id="mceu_34" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_34-body"><div id="mceu_14" class="mce-widget mce-btn mce-btn-small mce-colorbutton mce-first" role="button" tabindex="-1" aria-haspopup="true" aria-label="Text color"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-forecolor"></i><span id="mceu_14-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div><div id="mceu_15" class="mce-widget mce-btn mce-btn-small mce-colorbutton mce-last" role="button" tabindex="-1" aria-haspopup="true" aria-label="Background color"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-backcolor"></i><span id="mceu_15-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div></div></div><div id="mceu_35" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_35-body"><div id="mceu_16" class="mce-widget mce-btn mce-btn-small mce-menubtn mce-fixed-width mce-listbox mce-first mce-btn-has-text" tabindex="-1" aria-labelledby="mceu_16" role="button" aria-label="Font Family" aria-haspopup="true"><button id="mceu_16-open" role="presentation" type="button" tabindex="-1"><span class="mce-txt">Police</span> <i class="mce-caret"></i></button></div><div id="mceu_17" class="mce-widget mce-btn mce-btn-small mce-menubtn mce-fixed-width mce-listbox mce-last mce-btn-has-text" tabindex="-1" aria-labelledby="mceu_17" role="button" aria-label="Font Sizes" aria-haspopup="true"><button id="mceu_17-open" role="presentation" type="button" tabindex="-1"><span class="mce-txt">Taille de police</span> <i class="mce-caret"></i></button></div></div></div><div id="mceu_36" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_36-body"><div id="mceu_18" class="mce-widget mce-btn mce-btn-small mce-first" tabindex="-1" aria-labelledby="mceu_18" role="button" aria-label="Insert/edit link"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-link"></i></button></div><div id="mceu_19" class="mce-widget mce-btn mce-btn-small" tabindex="-1" aria-labelledby="mceu_19" role="button" aria-label="Remove link"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-unlink"></i></button></div><div id="mceu_20" class="mce-widget mce-btn mce-btn-small mce-menubtn mce-last" tabindex="-1" aria-labelledby="mceu_20" role="button" aria-label="Table" aria-haspopup="true"><button id="mceu_20-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-table"></i> <i class="mce-caret"></i></button></div></div></div><div id="mceu_37" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_37-body"><div id="mceu_21" class="mce-widget mce-btn mce-btn-small mce-first" tabindex="-1" aria-labelledby="mceu_21" role="button" aria-label="Special character"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-charmap"></i></button></div><div id="mceu_22" class="mce-widget mce-btn mce-btn-small" tabindex="-1" aria-labelledby="mceu_22" role="button" aria-label="Insert/edit image"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-image"></i></button></div><div id="mceu_23" class="mce-widget mce-btn mce-btn-small mce-last" tabindex="-1" aria-labelledby="mceu_23" role="button" aria-label="Insert/edit video"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-media"></i></button></div></div></div><div id="mceu_38" class="mce-container mce-flow-layout-item mce-last mce-btn-group" role="group"><div id="mceu_38-body"><div id="mceu_24" class="mce-widget mce-btn mce-btn-small mce-first" tabindex="-1" aria-labelledby="mceu_24" role="button" aria-label="Source code"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-code"></i></button></div><div id="mceu_25" class="mce-widget mce-btn mce-btn-small" tabindex="-1" aria-labelledby="mceu_25" role="button" aria-label="Find and replace"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-searchreplace"></i></button></div><div id="mceu_26" class="mce-widget mce-btn mce-btn-small mce-disabled" tabindex="-1" aria-labelledby="mceu_26" role="button" aria-label="Undo" aria-disabled="true"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-undo"></i></button></div><div id="mceu_27" class="mce-widget mce-btn mce-btn-small mce-last mce-disabled" tabindex="-1" aria-labelledby="mceu_27" role="button" aria-label="Redo" aria-disabled="true"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-redo"></i></button></div></div></div></div></div></div></div><div id="mceu_39" class="mce-edit-area mce-container mce-panel mce-stack-layout-item mce-last" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="composebody_ifr" frameborder="0" allowtransparency="true" title="Zone Texte Riche. Appuyer sur ALT-F9 pour le menu. Appuyer sur ALT-F10 pour la barre d&#39;outils. Appuyer sur ALT-0 pour de l&#39;aide." src="javascript:&quot;&quot;" style="width: 100%; height: 653px; display: block;" tabindex="1" src="./Roundcube Webmail __ Rédiger_files/saved_resource.html"></iframe></div></div></div><textarea name="_message" id="composebody" cols="70" rows="20" tabindex="1" class="mce_editor" aria-hidden="true" style="width: 1216px; height: 676px; display: none;">&lt;div style="font-size: 12pt; font-family: &amp;quot;Times New Roman&amp;quot;,Times,serif"&gt;
+&lt;div dir="auto" style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space"&gt;&lt;div&gt;http://www.fabioginja.pro/&lt;/div&gt;
+&lt;div&gt;http://fabioginja.pro/#&lt;/div&gt;
+&lt;div&gt;view-source:http://fabioginja.pro/#&lt;/div&gt;
+&lt;div&gt;&lt;a href="http://fabioginja.pro/js/circle-progress.js" target="_blank" rel="noreferrer"&gt;http://fabioginja.pro/js/circle-progress.js&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&nbsp;&lt;/div&gt;
+&lt;div&gt;&nbsp;&lt;/div&gt;
+&lt;div&gt;popup img&lt;/div&gt;
+&lt;div&gt;&nbsp;&lt;/div&gt;
+&lt;div&gt;https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img&lt;/div&gt;
+&lt;div&gt;&nbsp;&lt;/div&gt;
+&lt;div&gt;&nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;a href="http://blackmagik.fr/" rel="noreferrer" target="_blank"&gt;http://blackmagik.fr/&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;a href="http://wp-royal.com/hyper-x/demo/" rel="noreferrer" target="_blank"&gt;http://wp-royal.com/hyper-x/demo/&lt;/a&gt;&lt;/div&gt;
+&lt;a href="http://wp-royal.com/hyper-x/athena/about-me/" rel="noreferrer" target="_blank"&gt;http://wp-royal.com/hyper-x/athena/about-me/&lt;/a&gt;
+&lt;div&gt;&lt;a href="http://wp-royal.com/hyper-x/athena/#filter:all" rel="noreferrer" target="_blank"&gt;http://wp-royal.com/hyper-x/athena/#filter:all&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;a href="http://demo.agnidesigns.com/cookie/demo17/" rel="noreferrer" target="_blank"&gt;http://demo.agnidesigns.com/cookie/demo17/&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&nbsp;&lt;/div&gt;
+&lt;div&gt;&nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;a href="http://preview.themeforest.net/item/cookie-multipurpose-creative-wordpress-theme/full_screen_preview/14258278?_ga=1.104502665.84338125.1457642873" rel="noreferrer" target="_blank"&gt;http://preview.themeforest.net/item/cookie-multipurpose-creative-wordpress-theme/full_screen_preview/14258278?_ga=1.104502665.84338125.1457642873&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;a href="https://themeforest.net/item/hyperx-portfolio-for-freelancers-agencies/13439786?ref=wibeweb&amp;amp;clickthrough_id=1171585919&amp;amp;redirect_back=true" rel="noreferrer" target="_blank"&gt;https://themeforest.net/item/hyperx-portfolio-for-freelancers-agencies/13439786?ref=wibeweb&amp;amp;clickthrough_id=1171585919&amp;amp;redirect_back=true&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</textarea>
+
+<iframe name="savetarget" src="./Roundcube Webmail __ Rédiger_files/blank.html" style="width:0;height:0;border:none;visibility:hidden;" aria-hidden="true"></iframe>
+	</div>
+	<div id="compose-attachments" class="rightcol droptarget" role="region" aria-labelledby="aria-label-composeattachments">
+		<h2 id="aria-label-composeattachments" class="voice">Pièces jointes</h2>
+		<div style="text-align:center; margin-bottom:20px">
+			<input type="button" class="button" onclick="UI.show_uploadform(event);return false" tabindex="1" id="rcmbtn122" value="Joindre un fichier">
+		</div>
+		<ul id="attachment-list" class="attachmentslist" data-tabindex="1">
+<li id="rcmfile21520412768029517100" class="image jpeg jpg" onmouseover="rcube_webmail.long_subject_title_ex(this, 0)"><a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#delete" title="Supprimer" onclick="return rcmail.command(&#39;remove-attachment&#39;,&#39;rcmfile21520412768029517100&#39;, this)" class="delete" tabindex="1" aria-label="Supprimer header_150.jpg"></a>header_150.jpg <span class="attachment-size">(327 ko)</span></li>
+<li id="rcmfile21520412768030968700" class="image jpeg jpg" onmouseover="rcube_webmail.long_subject_title_ex(this, 0)"><a href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#delete" title="Supprimer" onclick="return rcmail.command(&#39;remove-attachment&#39;,&#39;rcmfile21520412768030968700&#39;, this)" class="delete" tabindex="1" aria-label="Supprimer header_300.jpg"></a>header_300.jpg <span class="attachment-size">(919 ko)</span></li>
+</ul>
+
+		
+	</div>
+<!--
+	<div id="composeformbuttons" class="footerleft formbuttons floating">
+		<input type="button" class="button mainaction" tabindex="11" id="rcmbtn123" onclick="return rcmail.command('send','',this,event)" value="Envoyer un courriel" disabled="disabled">
+		<input type="button" class="button" tabindex="12" id="rcmbtn124" onclick="return rcmail.command('savedraft','',this,event)" value="Enregistrer comme brouillon" disabled="disabled">
+		<input type="button" class="button" tabindex="13" id="rcmbtn125" onclick="return rcmail.command('list','',this,event)" value="Annuler" disabled="disabled">
+	</div>
+-->
+</div>
+
+</form>
+
+</div><!-- end mailview-right -->
+
+<div id="composesplitterv" unselectable="on" role="presentation" class="splitter splitter-v" style="left: 203px; top: 0px;"></div></div><!-- end mainscreencontent -->
+
+</div><!-- end mainscreen -->
+
+<div id="upload-dialog" class="propform popupdialog" title="Joindre un fichier" aria-hidden="true">
+	<h2 id="aria-label-uploaddialog" class="voice">Formulaire de téléversement de pièce jointe</h2>
+	<div id="uploadform"><form id="uploadformFrm" name="uploadform" method="post" enctype="multipart/form-data" action="http://webmail.clere.me/?_task=mail">
+<input type="hidden" name="_token" value="GGoF4i19ZU7zA2BoQZNu1vwH2tfZTFhx"><div><input type="file" name="_attachments[]" multiple="multiple"></div>
+<div class="hint">La taille de fichier maximum autorisée est 32 Mo</div>
+</form>
+</div>
+
+	<div class="formbuttons">
+		<input type="button" class="button mainaction" id="rcmbtn126" onclick="return rcmail.command(&#39;send-attachment&#39;,&#39;&#39;,this,event)" value="Téléverser">
+		<input type="button" class="button" onclick="UI.show_uploadform()" id="rcmbtn127" value="Annuler">
+	</div>
+</div>
+
+<div id="spellmenu" class="popupmenu" aria-hidden="true"></div>
+
+<div id="responsesmenu" class="popupmenu" aria-hidden="true">
+	<h3 id="aria-label-responsesmenu" class="voice">Menu des réponses prédéterminées</h3>
+	<ul class="toolbarmenu" id="textresponsesmenu" role="menu" aria-labelledby="aria-label-responsesmenu">
+		<li role="separator" class="separator" id=""><label>Insérer une réponse</label></li>
+		<ul id="responseslist"></ul>
+		<li role="separator" class="separator"><label>Gérer les réponses</label></li>
+		<li role="menuitem"><a unselectable="on" id="rcmbtn128" role="button" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;save-response&#39;,&#39;&#39;,this,event)" class="active" tabindex="0" aria-disabled="false">Créer une nouvelle réponse</a></li>
+		<li role="menuitem"><a id="rcmbtn129" role="button" href="http://webmail.clere.me/?_task=mail&amp;_action=compose&amp;_id=1768324325a9fa86023cf3#" onclick="return rcmail.command(&#39;responses&#39;,&#39;&#39;,this,event)" class="active" tabindex="0" aria-disabled="false">Éditer les réponses</a></li>
+	</ul>
+</div>
+
+<div id="messagestack"></div>
+
+<script type="text/javascript">
+if (!window.UI) { var UI = new rcube_mail_ui(); }
+</script>
+
+
+<script type="text/javascript">
+
+jQuery.extend(jQuery.ui.dialog.prototype.options.position, {
+                using: function(pos) {
+                    var me = jQuery(this),
+                        offset = me.css(pos).offset(),
+                        topOffset = offset.top - 12;
+                    if (topOffset < 0)
+                        me.css('top', pos.top - topOffset);
+                    if (offset.left + me.outerWidth() + 12 > jQuery(window).width())
+                        me.css('left', pos.left - 12);
+                }
+            });
+var googie = new GoogieSpell('skins/larry/images/googiespell/','./?_task=utils&_action=spell&_remote=1&lang=', false);
+googie.lang_chck_spell = "Vérification de l\'orthographe";
+googie.lang_rsm_edt = "Retourner à l\'édition";
+googie.lang_close = "Fermer";
+googie.lang_revert = "Revenir à";
+googie.lang_no_error_found = "Aucune faute d\'orthographe trouvée.";
+googie.lang_learn_word = "Ajouter au dictionnaire";
+googie.setLanguages({"ar":"Arabic (\u0627\u0644\u0639\u0631\u0628\u064a\u0629)","am":"Armenian (\u0540\u0561\u0575\u0565\u0580\u0565\u0576)","eu":"Basque (Euskara)","br":"Breton (Brezhoneg)","bg":"Bulgarian (\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438)","ca":"Catalan (Catal\u00e0)","hr":"Croatian (Hrvatski)","cs":"Czech (\u010cesky)","da":"Danish (Dansk)","nl":"Dutch (Nederlands)","en_GB":"English (GB)","en_US":"English (US)","eo":"Esperanto","et":"Estonian (Eesti)","fi":"Finnish (Suomi)","fr_FR":"French (Fran\u00e7ais)","gl":"Galician (Galego)","de_DE":"German (Deutsch)","de_CH":"German (Schweiz)","el":"Greek (\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac)","he":"Hebrew (\u05e2\u05d1\u05e8\u05d9\u05ea)","hu":"Hungarian (Magyar)","is":"Icelandic (\u00cdslenska)","ga":"Irish (Gaedhilge)","it":"Italian (Italiano)","ku":"Kurdish (Kurmanc\u00ee)","lv":"Latvian (Latvie\u0161u)","lt":"Lithuanian (Lietuvi\u0161kai)","fa":"Persian (\u0641\u0627\u0631\u0633\u06cc)","pl":"Polish (Polski)","pt_BR":"Portuguese (Brasil)","pt_PT":"Portuguese (Portugu\u00eas)","ro":"Romanian (Rom\u00e2ne\u015fte)","ru":"Russian (\u0420\u0443\u0441\u0441\u043a\u0438\u0439)","sk":"Slovak (Sloven\u010dina)","sl":"Slovenian (Sloven\u0161\u010dina)","es":"Spanish (Espa\u00f1ol)","sv":"Swedish (Svenska)","uk":"Ukrainian (\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430)","cy":"Welsh (Cymraeg)"});
+googie.setCurrentLanguage('fr_FR');
+googie.setDecoration(false);
+googie.decorateTextarea('composebody');
+$(document).ready(function(){ 
+rcmail.init();
+});
+</script>
+
+
+</body></html>

@@ -29,13 +29,13 @@ h2 {
 }
 h3 {
     font-family: 'Abel', sans-serif;
-    font-size: 100%;
+    font-size: 25px;
     color: #3c3939;
 }
 p {
     font-family: 'Abel', sans-serif;
     color: #3c3939;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 130%;
 }
 
@@ -52,7 +52,6 @@ p {
 body {
     box-sizing: border-box;
 }
-
 
 
 /*==========  Pour les Ecrans Large ==========*/ 
@@ -74,23 +73,28 @@ body {
 
 
 /* ---------------------
-	NAV BAR mainMenu
+	    NAV BAR 
 ------------------------ */
+.mav-nav{
+    border:0;
+    background: none;
+}
 
 .logo {
     width: 60%;
 }
-.navbar-mainMenu {
+
+.navbar-default {
     background-color: #fff;
     margin-bottom: 0;
 }
 
-.navbar-mainMenu ul {
+.navbar-default ul {
     text-align: center;
 }
 
-.navbar-mainMenu ul li,
-.navbar-mainMEnu .navbar-brand {
+.navbar-default ul li,
+.navbar-default .navbar-brand {
     margin-right: 2rem;
 }
 
@@ -98,6 +102,13 @@ body {
     font-family: 'Abel', sans-serif;
     font-size: 17px;
     color: #3c3939;
+    text-transform: uppercase;
+    display:block;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+    color: #000000;
     text-transform: uppercase;
     display:block;
 }
@@ -116,33 +127,20 @@ a.navbar-brand {
     text-align: center;
 }
 
-
-/* ---------------------
-        NAV
------------------------- */
-/*
-#mobile {
-    background-color: #3c3939;
-}
-
-#mobile ul {
-    margin: 0;
-    padding: 10px 0;
-    text-align: center;
-}
-
-#mobile ul li {
-    display: inline-block;
-    padding: 0 1.5rem;
-}
-
-#mobile ul li img {
-    max-width: 100%;
-}
-*/
-.navbar-toggle {
-    background-color: #3c3939;
+.boutton {
+    background: #fff;
+    margin-top: 40px;
+    margin-bottom: -10px;
+    border: 1px solid #3c3939;
 } 
+
+/* .navbar-toggle a {
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+    border: 1px,  #3c3939;
+    text-transform: uppercase;
+    display:block;
+} */
 
 /* ---------------------
     Flèche haut
@@ -170,6 +168,7 @@ button :hover{
 .projecteur {
     margin-top: 70px; 
     background: #3c3939;
+    padding-top: 20px;
 }
 
 .projecteur img {
@@ -180,19 +179,20 @@ button :hover{
 figcaption p {
 /*  position: absolute;   */
     color: #fff;
-    font-size: 150%;
+    font-size: 1.7vw;
     box-sizing: border-box;
-    line-height: 150%;
+    margin-bottom: 30px;
 }
 .nom_Prenom {
     color: #ffff33;
-    font-size: 200%;
+    font-size: 3.8vw;
 }
 .mailTo {
     color: rgb(245, 134, 29);
 }
 
-/***************** MAIN HOME *******************/
+
+/***************** DESCRIPTION *******************/
 
 h2 {
     font-family: 'Abel', sans-serif; 
@@ -208,16 +208,20 @@ h4 {
     font-family: 'Abel', sans-serif;
     font-size: 21px;
     color: #3c3939;
-    line-height: 150%;
+    line-height: 180%;
 }
-
+.des_prestations {
+    margin: 0;
+}
 .accroche {
     text-align: center;
     padding: 90px 0 40px 0;
 }
 .portrait {
-	width: 80%;
+	width: 100%;
     float: left;
+    margin: 0;
+    padding: 0;
 }
 /*
 .histoire {
@@ -225,14 +229,16 @@ h4 {
     box-sizing: border-box;
 }   */
 .laPetiteHistoire {
-    margin: 70px 0 10px 0;
+    margin: 80px 0 10px 0;
 }
 .histoire p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 22px;
     padding-left: 50px;
 }
-
+.lienCV {
+    color: rgb(245, 86, 0);
+}
 .pointsForts{
     width:100%;
     text-transform: uppercase;
@@ -253,22 +259,26 @@ hr{
 
 .headerPortfolio{
     background: #3c3939;
-    padding: 80px;
-    margin-top: 60px;
+    padding: 20px 0 20px 0;
+    margin: 60px 0 0 0;
 }
 .menuPortfolio {
-    margin: 0 80px 0 80px;
+    margin: 0;
+    padding: 0;
 }
 .menuPortfolio a{
+    width: 150px;
     font-family: 'Abel', sans-serif;
     font-size: 16px;
+    text-align: center;
     text-transform: uppercase;
 	color: #3c3939;
 	text-decoration:none;
     background: #ffff33;
+    /* background-size: 50px; */
     padding: 50px;
     border-radius: 100px;
-    margin-top: 0;
+    display: block;
 }
 .menuPortfolio li:hover{
 	cursor: pointer;

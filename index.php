@@ -10,9 +10,9 @@ include_once("inc/nav.php");
                 <div class="row">
                     <div class="col-xs-12">
                         <figure>
-                        <img src="img/header.png" alt="Profil Adeline Clère" title="adelineClere">
+                        <img src="img/header_150.jpg" alt="Profil Adeline Clère" title="adelineClere">
                             <figcaption>
-                                <p><span class="nom_Prenom">Adeline Clère</span><br>0 66 22 99 584 | Contactez-moi : <a href="mailto:adeline@clere.me" class="mailTo">adeline@clere.me</a> | www.adeline-clere.fr | <a href="" class="picto_linkedin"> <i class="fab fa-linkedin-in"></i>
+                                <p><span class="nom_Prenom">Adeline Clère</span><br>0 66 22 99 584 | Contactez-moi : <a href="mailto:adeline@clere.me" class="mailTo">adeline@clere.me</a> | www.adeline-clere.fr | <a href="" class="picto_linkedin"><a href=https://www.linkedin.com/in/adeline-clere/><i class="fab fa-linkedin-in"></a></i>       
                             <!--    <img src="img/picto_linkedin1.png" alt="Lien linkedin Adeline Clère">   -->
                                 </a></p>
                             </figcaption>
@@ -36,7 +36,7 @@ include_once("inc/nav.php");
         <section id="presentation">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 des_prestations">
                         <h2 class="accroche">Des prestations sur-mesure pour des réalisations au fil !</h2>
                         <hr>
                     </div>
@@ -49,7 +49,10 @@ include_once("inc/nav.php");
                     </aside>
                     <article class="col-sm-9" "histoire">
                         <h3 class="laPetiteHistoire">La petite histoire…</h3>
-                        <p>Après un Bac Math./Sc. Physiques, des études en Communication d’Entreprise et Culturelle, le goût de la construction, création, détournent mon parcours pour me former en alternance au métier de maquettiste-graphiste. Et aujourd'hui, avide de technique et d'élargir mon champ d'action, me voici développeur et intégrateur web après une formation intensive diplômante et labellisée au sein de l'école <a href="http://www.wf3.fr/" target="_blank">Webforce 3</a> !</p>
+                        <p>Après un Bac Math./Sc. Physiques, des études en Communication d’Entreprise et Culturelle, le goût de la construction, création, détournent mon parcours pour me former en alternance au métier de maquettiste-graphiste. Et aujourd'hui, avide de technique et d'élargir mon champ d'action, me voici développeur et intégrateur web après une formation intensive diplômante et labellisée au sein de l'école <a href="http://www.wf3.fr/" target="_blank">Webforce 3</a> !
+                        <br>
+                        <br><em>Pour en savoir plus > </em><a href="" class="lienCV">téléchargez mon CV</a>
+                        </p>
                     </article>
                 </div>
                 <hr>

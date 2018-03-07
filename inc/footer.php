@@ -1,4 +1,6 @@
-   <footer>
+    
+  
+    <footer>
             <div class="container">
                 <hr class="filetFooter">
                 <p class="texteFooter">© Adeline Clère 2018 - MyWeb wf3 from scratch</p>
