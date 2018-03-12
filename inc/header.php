@@ -30,18 +30,33 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+
         <!-- FontAwesome CSS -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
         <link rel="stylesheet" href="<?= URL ?>css/fontawesome/web-fonts-with-css/css/fontawesome.min.css">
-        
-         <!--  CSS -->
+
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="<?= URL ?>css/animate.min.css">
+       
+        <!--  COPIE OWL.CAROUSEL -->
+        <link rel='stylesheet' id='volar-owl-carousel-css'  href='https://www.cyber-l.com/wp-content/themes/volar/css/owl.carousel.min.css?ver=4.7.9'/>
+        <link rel='stylesheet' href='https://www.cyber-l.com/wp-content/themes/volar/owl.style.css?ver=4.7.9' />
+
+    
+        <!--  CSS -->
         <link href="<?= URL ?>css/style.css" rel="stylesheet">
                 <!-- ⚠️  balise php pr appeler constante URL ds l'URL pour donner chemin à fichiers du dossier admin -->
 
-        
         <!-- HTML 5 Shiv -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-        
+
+
+
     </head>
     <body>
         
+
+ <!--  COPIE OWL.CAROUSEL
+ <link rel='stylesheet' id='volar-owl-carousel-css'  href='https://www.cyber-l.com/wp-content/themes/volar/css/owl.carousel.min.css?ver=4.7.9' type='text/css' media='all' />
+        <link rel='stylesheet' id='volar-style-css'  href='https://www.cyber-l.com/wp-content/themes/volar/style.css?ver=4.7.9' type='text/css' media='all' />
+         -->

@@ -1,7 +1,7 @@
 <?php       // init = initialisation : regrp, rapatrie tout pour les autres pg !
 
 //-------------------- ⚠️ CONNEXION BDD
-$pdo = new PDO('mysql:host=localhost;dbname=projet_perso', 'root', '', array(PDO::ATTR_ERRMODE => PDO :: ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
+$pdo = new PDO('mysql:host=localhost;dbname=projet_perso', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO :: ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
 ));
 
 //-------------------- ⚠️ SESSION
@@ -9,7 +9,7 @@ session_start();
 
 //-------------------- ⚠️ CHEMIN
 define('RACINE_SITE', $_SERVER['DOCUMENT_ROOT'] . "/PHP/boutique/");    
-// ⚠️ Cette CONSTANTE retourne le chemin physique du dossier boutique sur le serveur
+// ⚠️ Cette CONSTANTE retourne le chemin physique du dossier projet-perso sur le serveur
 // (Lors de l'enregistrement d'img/photo, nous aurons besoin du chemin complet du dossier photo pour enregistrer le photo)
 // echo '<pre>'; print_r($_SERVER); echo '</pre>';  => ARRAY du server
 // 

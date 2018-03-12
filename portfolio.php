@@ -38,79 +38,162 @@ include_once("inc/nav.php");
                     <!-- Section Web -->
                     <div class="col-sm-12" "portfolioWeb">
                         <h2 id="web">Web</h2>
-                            <div class="row"> 
-
-                            <?php
-                                $resultat = $pdo->query("SELECT * FROM portfolio WHERE categorie = 'web'");
-
-                                for($i = 1; $i < $resultat->rowCount(); $i++)
-                                {
-                                    $legend = $resultat->fetch(PDO::FETCH_ASSOC);
-                                    echo '<div class="col-md-3 col-sm-6"> 
-                                    <img id="myImg" class="img-responsive thumbnail" src="img/web/w' . $i . '.jpg" alt="' . $legend['description'] . '" class="img-responsive">
+                            <p class="pWeb">
+                            Intégration HTML 5 / CSS 3 | Responsive Web Design (mobile) | Bootstrap | JavaScript, Jquery | CMS WordPress | Base de données MySQL | PHP procédure et orienté objet | Ajax | Synfonie
+                            </p>
+                            <div class="row" "margeFin">               
+                                <div class="ligne1">
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img id="myImg" class="img-responsive thumbnail" src="img/web/w1.jpg" alt="" class="img-responsive">
+                                        <!-- The Modal -->
+                                        <div id="myModal" class="modal">
+                                        <!-- The Close Button -->
+                                        <span class="close">&times;</span>
+                                        <!-- Modal Content (The Image) -->
+                                        <img class="modal-content" id="img01">
+                                        <!-- Modal Caption (Image Text) -->
+                                        <div id="caption"></div>
+                                        </div>
                                     </div>
-                                    <div id="myModal" class="modal">
-                                    <span class="close">&times;</span>
-                                    <img class="modal-content" id="img01">
-                                    <div id="caption"></div>
-                                    </div>';
-                                }
-                                ?>
 
-                        <!--    <div class="col-md-3 col-sm-6"> 
-                                    <img id="myImg" class="img-responsive thumbnail" src="img/web/w1.jpg" alt="codage page apple" class="img-responsive">
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img id="w2" class="img-responsive thumbnail" src="img/web/w2.jpg" alt="Design Pause café tea time home" class="img-responsive">
+                                    </div>    
+
+                                    <div class="col-md-3 col-sm-6">   
+                                        <img class="img-responsive thumbnail" src="img/web/w3.jpg" alt="Design Pause café tea time" class="img-responsive">
+                                    </div>  
+                                    <div class="col-md-3 col-sm-6">   
+                                        <img class="img-responsive thumbnail" src="img/web/w4.jpg" alt="Création Wordpress Paris sur Vins" class="img-responsive">
+                                    </div>  
                                 </div>
-                                <div class="col-md-3 col-sm-6"> 
-                                    <img class="img-responsive thumbnail" src="img/web/w2.jpg" alt="Design Pause café tea time home" class="img-responsive">
-                                </div>  
-                                <div class="col-md-3 col-sm-6">   
-                                    <img class="img-responsive thumbnail" src="img/web/w3.jpg" alt="Design Pause café tea time" class="img-responsive">
-                                </div>  
-                                <div class="col-md-3 col-sm-6">   
-                                    <img class="img-responsive thumbnail" src="img/web/w4.jpg" alt="Création Wordpress Paris sur Vins" class="img-responsive">
-                                </div>  
-                                <div class="col-md-3 col-sm-6">   
-                                    <img class="img-responsive thumbnail" src="img/web/w5.jpg" alt="Design application laboratoires Chugai" class="img-responsive">
-                                </div>  
-                                <div class="col-md-3 col-sm-6">   
-                                    <img class="img-responsive thumbnail" src="img/web/w6.jpg" alt="Design application laboratoires Roche - Chugai" class="img" class="img-responsive">
-                                </div>   
-                                <div class="col-md-3 col-sm-6"> 
-                                    <img class="img-responsive thumbnail" src="img/webw7.jpg" alt="Design application Novartis Lucentis">
-                                </div>  -->
+                                    <div class="col-md-3 col-sm-6">   
+                                        <img class="img-responsive thumbnail" src="img/web/w5.jpg" alt="Création site personnel Wordpress" class="img-responsive">
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">   
+                                        <img class="img-responsive thumbnail" src="img/web/w6.jpg" alt="Design application laboratoires Chugai" class="img-responsive">
+                                    </div>  
+                                    </div>  
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/web/w8.jpg" alt="Design application Novartis Lucentis">
+                                    </div> 
                             </div>  
-                        <hr>
                     </div>
 
                     <!-- Section Edition --> 
+                    <hr>
                     <div class="col-sm-12" "portfolioEdition">
                         <h2 id="edition">Edition</h2>
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6 col-sx-12"><img src="img/web/w1.jpg" alt="" class="img"></div>
-                            <div class="col-md-3 col-sm-6 col-sx-12"><img src="img/web/w2.jpg" alt="" class="img"></div>
-                            <div class="col-md-3 col-sm-6 col-sx-12"><img src="img/web/w3.jpg" alt="" class="img"></div>
-                            <div class="col-md-3 col-sm-6 col-sx-12"><img src="img/web/w4.jpg" alt="" class="img"></div>
-                            <div class="col-md-3 col-sm-6 col-sx-12"><img src="img/web/w5.jpg" alt="" class="img"></div>
-                            <div class="col-md-3 col-sm-6 col-sx-12"><img src="img/web/w6.jpg" alt="" class="img"></div>
-                            <div class="col-md-3 col-sm-6 col-sx-12"><img src="img/web/w7.jpg" alt="" class="img"></div>
-                            
-                    </div>
-                        <hr>
+                            <div class="row" "margeFin">               
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e1.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e2.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e3.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e4.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e5.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e6.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e7.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e8.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e9.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e10.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e11.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e12.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e13.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e14.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e15.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e16.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e17.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/ed/e18.jpg" alt="">
+                                    </div>  
+                            </div>
                     </div>
                 
                     <!-- Section Identité --> 
+                    <hr>
                     <div class="col-sm-12" "portfolioIdentite">
                         <h2 id="identite">Identité</h2>
-              
-                        <hr>
+                            <div class="row" "margeFin">               
+                                    <div class="col-md-6 col-sm-6 col-xs-12"> 
+                                        <img class="img-responsive thumbnail" src="img/identite/i1.jpg" alt="">
+                                    </div>  
+                                    <div class="col-md-36 col-sm-6 col-xs-12"> 
+                                        <img class="img-responsive thumbnail" src="img/identite/i2.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/identite/i3.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/identite/i4.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/identite/i5.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/identite/i6.jpg" alt="">
+                                    </div> 
+                            </div>
                     </div>
 
-                <!-- Section Matte-painting --> 
+                    <!-- Section Matte-painting --> 
+                    <hr>
                     <div class="col-sm-12" "portfolioMatte">
                         <h2 id="matteP">Matte-painting</h2>
-                            
-                        <hr>
+                        <div class="row" "margeFin">               
+                                <div class="ligne1">
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/matte/mp1.jpg" alt="">
+                                    </div>  
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/matte/mp2.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/matte/mp3.jpg" alt="">
+                                    </div> 
+                                    <div class="col-md-3 col-sm-6"> 
+                                        <img class="img-responsive thumbnail" src="img/matte/mp4.jpg" alt="">
+                                    </div> 
+                                </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12"> 
+                                        <img class="img-responsive thumbnail" src="img/matte/mp5.jpg" alt="">
+                                    </div> 
+                            </div>
                     </div>
+                    <hr>
+
                  
                 </div>  <!-- end div row -->
             </div>  <!-- end div container -->
@@ -122,29 +205,30 @@ include_once("inc/nav.php");
         
  <!-- --------------------------------- JS POPUP MODAL-------------------------------------- -->
 
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
+<script>
 
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('myImg');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
+// Get the modal
+var modal = document.getElementById('myModal');
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-            modal.style.display = "none";
-        }
-    </script>ipt>
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
 
 
  <!-- ----------------------------------------------------------------------- -->

@@ -22,9 +22,9 @@
                 <ul class="nav navbar-nav mon-menu">
                     <li><a href="index.php">Ma pomme</a></li>
                     <li><a href="portfolio.php">Portfolio</a></li>
-                    <li><a href="#">Mon œil</a></li>
-                    <li><a href="#">Des mots</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="mon_oeil.php">Mon œil</a></li>
+                    <li><a href="des_mots.php">Des mots</a></li>
+                <!--    <li><a href="#">Contact</a></li>    -->
                 </ul>
             </div>
             </div>
