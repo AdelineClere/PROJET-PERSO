@@ -10,7 +10,7 @@ include_once("inc/nav.php");
                 <div class="row">
                     <div class="col-xs-12">
                         <figure>
-                        <img src="img/header2.png" alt="Profil Adeline Clère" title="adelineClere">
+                        <img class="animated zoomIn" src="img/header2.png" alt="Profil Adeline Clère" title="adelineClere">
                             <figcaption>
                                 <p><span class="nom_Prenom">Adeline Clère</span><br>0 66 22 99 584 I Ecrivez-moi : <a href="mailto:adeline@clere.me" class="mailTo">adeline@clere.me</a> I www.adeline-clere.fr I <a href="" class="picto_linkedin"><a class="in" href=https://www.linkedin.com/in/adeline-clere/ target="_blank"><i class="fab fa-linkedin-in"></a></i>       
                             <!--    <img src="img/picto_linkedin1.png" alt="Lien linkedin Adeline Clère">   -->
@@ -41,7 +41,7 @@ include_once("inc/nav.php");
 
         <section data-section="logo-slider" class="section  section-id-8 section-white client-logos client-logos section--logo-slider no-padding-top no-padding-bottom no-margin-top"><div class="container section-container padding-top-10 padding-bottom-10"<div class="section-inner">	<div class="small-section">
             <div class="owl-carousel id--client-logos" data-auto-play="1" data-play-speed="1000">
-                <div>
+                <div class="margin">
                     <img src="img/logos/ind.png" alt=""/>   </div>
                 <div>
                     <img src="img/logos/phot.png" alt="" />   </div>

@@ -7,6 +7,7 @@ include_once("inc/nav.php");
         <!-- Menu Portfolio -->   
         <section class="headerPortfolio">
             <div class="container">
+    <!--    <div class="parallax"></div>    --> 
                 <div class="row"> 
                     <div class="col-sm-12" "navPortfolio">
                         <ul class="menuPortfolio">
@@ -36,15 +37,14 @@ include_once("inc/nav.php");
             <div class="container">
                 <div class="row">
                     <!-- Section Web -->
-                    <div class="col-sm-12" "portfolioWeb">
+                    <div class="col-sm-12 portfolioWeb">
                         <h2 id="web">Web</h2>
                             <p class="pWeb">
                             Intégration HTML 5 / CSS 3 | Responsive Web Design (mobile) | Bootstrap | JavaScript, Jquery | CMS WordPress | Base de données MySQL | PHP procédure et orienté objet | Ajax | Synfonie
                             </p>
-                            <div class="row" "margeFin">               
-                                <div class="ligne1">
+                            <div class="row">               
                                     <div class="col-md-3 col-sm-6"> 
-                                        <img id="myImg" class="img-responsive thumbnail" src="img/web/w1.jpg" alt="" class="img-responsive">
+                                        <img id="myImg" class="img-responsive thumbnail" src="img/web/w1.jpg" alt="Codage html/css/Bootstrap/jquery" class="img-responsive">
                                         <!-- The Modal -->
                                         <div id="myModal" class="modal">
                                         <!-- The Close Button -->
@@ -55,24 +55,20 @@ include_once("inc/nav.php");
                                         <div id="caption"></div>
                                         </div>
                                     </div>
-
                                     <div class="col-md-3 col-sm-6"> 
                                         <img id="w2" class="img-responsive thumbnail" src="img/web/w2.jpg" alt="Design Pause café tea time home" class="img-responsive">
                                     </div>    
-
                                     <div class="col-md-3 col-sm-6">   
                                         <img class="img-responsive thumbnail" src="img/web/w3.jpg" alt="Design Pause café tea time" class="img-responsive">
                                     </div>  
                                     <div class="col-md-3 col-sm-6">   
                                         <img class="img-responsive thumbnail" src="img/web/w4.jpg" alt="Création Wordpress Paris sur Vins" class="img-responsive">
-                                    </div>  
-                                </div>
+                                    </div>                                 
                                     <div class="col-md-3 col-sm-6">   
                                         <img class="img-responsive thumbnail" src="img/web/w5.jpg" alt="Création site personnel Wordpress" class="img-responsive">
                                     </div>
                                     <div class="col-md-3 col-sm-6">   
                                         <img class="img-responsive thumbnail" src="img/web/w6.jpg" alt="Design application laboratoires Chugai" class="img-responsive">
-                                    </div>  
                                     </div>  
                                     <div class="col-md-3 col-sm-6"> 
                                         <img class="img-responsive thumbnail" src="img/web/w8.jpg" alt="Design application Novartis Lucentis">
@@ -81,10 +77,10 @@ include_once("inc/nav.php");
                     </div>
 
                     <!-- Section Edition --> 
+                    <div class="col-sm-12 portfolioEdition">
                     <hr>
-                    <div class="col-sm-12" "portfolioEdition">
                         <h2 id="edition">Edition</h2>
-                            <div class="row" "margeFin">               
+                            <div class="row">               
                                     <div class="col-md-3 col-sm-6"> 
                                         <img class="img-responsive thumbnail" src="img/ed/e1.jpg" alt="">
                                     </div>
@@ -143,8 +139,8 @@ include_once("inc/nav.php");
                     </div>
                 
                     <!-- Section Identité --> 
+                    <div class="col-sm-12 portfolioIdentite">
                     <hr>
-                    <div class="col-sm-12" "portfolioIdentite">
                         <h2 id="identite">Identité</h2>
                             <div class="row" "margeFin">               
                                     <div class="col-md-6 col-sm-6 col-xs-12"> 
@@ -169,8 +165,8 @@ include_once("inc/nav.php");
                     </div>
 
                     <!-- Section Matte-painting --> 
+                    <div class="col-sm-12 portfolioMatte">
                     <hr>
-                    <div class="col-sm-12" "portfolioMatte">
                         <h2 id="matteP">Matte-painting</h2>
                         <div class="row" "margeFin">               
                                 <div class="ligne1">
