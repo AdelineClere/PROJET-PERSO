@@ -178,6 +178,8 @@ button :hover{
 
 /***************** PROJECTEUR *******************/
 
+
+
 .projecteur {
     margin-top: 60px; 
     background: #3c3939;
@@ -251,6 +253,12 @@ figcaption p {
 		padding-bottom: 50px;
 	}
 }
+
+.margin {
+    margin-right: 0;
+}
+
+
 .owl-carousel .owl-item {
 }
 .owl-carousel.owl-drag .owl-item {
