@@ -52,11 +52,11 @@ p a {
 p a:hover {
     border-bottom: 0;
 }
-#contener{
+/* #contener{
     width: 1000px;
 	margin: auto;
     background: white;
-}
+}   */
 
 .reinitialise {
     border-radius : 0
@@ -91,6 +91,7 @@ body {
 .mav-nav{
     border:0;
     background: none;
+    margin-top: 20px;
 }
 
 .logo {
@@ -128,6 +129,7 @@ body {
 
 a.navbar-brand {
     color: #3c3939;
+    margin-top: -20px;
 }
 
 .navbar .navbar-nav {
@@ -155,8 +157,36 @@ a.navbar-brand {
     display:block;
 } */
 
+
+/***************** FOOTER *******************/
+
+footer {
+    margin-top: 50px;
+	padding: 15px;
+}
+.filetFooter {
+    margin-bottom: 20px;
+}
+.texteFooter {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    color: #3c3939;
+}
+.clear {
+	clear:both;
+}
+
+/* ?????? */
+.fa-angle-up:before {
+    content: "\f106";
+}
+    *:before {
+        box-sizing: border-box;
+    }
+    
 /* ---------------------
-    Flèche haut
+    Flèche > top
 ------------------------ */
 
 button {
@@ -177,7 +207,6 @@ button :hover{
 }
 
 /***************** PROJECTEUR *******************/
-
 
 
 .projecteur {
@@ -228,6 +257,8 @@ figcaption p {
 
 /***************** LOGOS *******************/
 
+
+/*
 .section-white{
 	background-color: #ffffff !important;
 }
@@ -276,7 +307,7 @@ figcaption p {
 
 }
 
-/*
+
 .client-logos .container{
     padding: 0;
     height: 250px;
@@ -335,6 +366,7 @@ h4 {
     text-align: justify;
     font-size: 20px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 .lienCV {
     color: rgb(243, 97, 18);
@@ -355,41 +387,49 @@ hr{
     margin: 0;
   }
 
-/********************* NAV PORTFOLIO ******************/
 
-/*
+/***************** PARALLAX *******************/
+
 .parallax { 
-    background-image: url(img/fondP.jpg) no-repeat;
-    height: 400px; 
+    /* The image used */
+    background-image: url("../img/parallax/fond5.jpg");
+
+    /* Set a specific height */
+    height: 400px;    
+
+    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-*/
+
+/********************* NAV PORTFOLIO ******************/
 
 
 .headerPortfolio{
-    background: #3c3939;
+/*    background: #3c3939;      */
     padding: 30px 0 30px 0;
     margin: 80px 0 0 0;
-}
+}   
+
 .menuPortfolio {
-    margin: 0;
+    margin: 115px 5px 5px 5px;
     padding: 0;
     list-style-type: none; 
 }
+
 .menuPortfolio a{
-    width: 150px;
+    width: 160px;
     font-family: 'Abel', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
 	color: #3c3939;
 	text-decoration:none;
     background: #ffff33;
     padding: 50px;
-    border-radius: 100px;
+    border-radius: 110px;
     display: block;
 }
 .menuPortfolio li:hover{
@@ -401,13 +441,13 @@ hr{
 }
 
 
+
 /***************** PORTFOLIO *******************/
 
 #Portfolio{
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 70px;
 }
-
 .portfolioWeb {
     padding-bottom: 50px;
 }
@@ -417,7 +457,6 @@ hr{
 .portfolioIdentite {
     padding-bottom: 50px;
 }
-
 #web {
     padding-bottom: 30px;
 }
@@ -430,25 +469,21 @@ hr{
 #matteP {
     padding-bottom: 30px;
 }
-
 .pWeb {
     font-size: 23px;
     line-height: 150%;
     margin-bottom: 30px;
 }
-
 .thumbnail {
     padding: 0;
     border: 0;
     border-radius: 0;
     margin-bottom: 35px;
 }
-.img{
-    width: 100%;
-    padding: 15px 0;
-    margin: 0px;
+.vignettes {
+    margin: 0;
+    padding: 0 30px 20px 30px;
 }
-
 
 /***************** MON ŒIL *******************/
 
@@ -463,118 +498,162 @@ hr{
     margin-right: auto;
 }
 
-/***************** FOOTER *******************/
 
-footer {
-    margin-top: 50px;
-	padding: 15px;
-}
-.filetFooter {
-    margin-bottom: 20px;
-}
-.texteFooter {
+
+
+/***************** MODAL portfolio *******************/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*
+  .column {
+    float: left;
+    width: 25%;
+  } */
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+/*    background-color: #fefefe;    */
+    margin: auto;
+    padding: 0;
+/*    width: 90%;   */
+    max-width: 1000px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
     text-align: center;
+  }
+  
+  .cursor {
+    cursor: pointer
+  }
+  #caption {
     font-family: 'Abel', sans-serif;
-    font-size: 14px;
-    color: #3c3939;
-}
-.clear {
-	clear:both;
-}
+    color: #fff;
+    font-size: 18px;
+    margin: 15px 0 30px 0;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
-/* ?????? */
-.fa-angle-up:before {
-    content: "\f106";
-}
-    *:before {
-        box-sizing: border-box;
-    }
 
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  img {
+  /*  margin-bottom: -4px;  */
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white; 
+  }
+  
+  .demo {
+    opacity: 0.6;
+    margin: 20px;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+    opacity: 1; 
+  }
+  img.hover-shadow:hover {
+    opacity: 0.5; 
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+/*    .next a {
+    background-color: #878282;
+    }   */
 
-/***************** POPUP images *******************/
-
-    #myImg {
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-    
-    #myImg:hover {opacity: 0.7;}
-    
-    /* The Modal (background) */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-    }
-    
-    /* Modal Content (image) */
-    .modal-content {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-    }
-    
-    /* Caption of Modal Image */
-    #caption {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-        text-align: center;
-        color: #ccc;
-        padding: 10px 0;
-        height: 150px;
-    }
-    
-    /* Add Animation */
-    .modal-content, #caption {    
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-    }
-    
-    @-webkit-keyframes zoom {
-        from {-webkit-transform:scale(0)} 
-        to {-webkit-transform:scale(1)}
-    }
-    
-    @keyframes zoom {
-        from {transform:scale(0)} 
-        to {transform:scale(1)}
-    }
-    
-    /* The Close Button */
-    .close {
-        position: absolute;
-        top: 15px;
-        right: 35px;
-        color: #f1f1f1;
-        font-size: 40px;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-    
-    .close:hover,
-    .close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    /* 100% Image Width on Smaller Screens */
-    @media only screen and (max-width: 700px){
-        .modal-content {
-            width: 100%;
-        }
+    .next a:focus, a:hover {
+    color: #878282;
+    text-decoration: none;
     }
