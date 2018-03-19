@@ -66,6 +66,9 @@ include_once("inc/nav.php");
                 <div>
                     <img src="img/logos/symf.png" alt="" />   </div>
                 <div>
+                <div>
+                    <img src="img/logos/symf.png" alt="" />   </div>
+                <div>
             </div>
 </section>
 

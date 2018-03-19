@@ -39,8 +39,7 @@
         <link rel="stylesheet" href="<?= URL ?>css/animate.min.css">
        
         <!--  COPIE OWL.CAROUSEL -->
-        <link rel='stylesheet' id='volar-owl-carousel-css'  href='https://www.cyber-l.com/wp-content/themes/volar/css/owl.carousel.min.css?ver=4.7.9'/>
-        <link rel='stylesheet' href='https://www.cyber-l.com/wp-content/themes/volar/owl.style.css?ver=4.7.9' />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.carousel.min.css'/>
 
     
         <!--  CSS -->
