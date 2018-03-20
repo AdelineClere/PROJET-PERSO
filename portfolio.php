@@ -77,7 +77,7 @@ include_once("inc/nav.php");
 
                                     <div class="mySlides">
                                     <div class="numbertext">1 / 8</div>
-                                    <img src="img/web/w1.jpg" style="width:60%">
+                                    <img src="img/web/w1.jpg" style="width:100%">
                                     </div>
                                     <div class="mySlides">
                                     <div class="numbertext">2 / 8</div>
@@ -97,7 +97,7 @@ include_once("inc/nav.php");
                                     </div> 
                                     <div class="mySlides">
                                     <div class="numbertext">6 / 8</div>
-                                    <img src="img/web/w6.jpg" style="width:60%">
+                                    <img src="img/web/w6.jpg" style="width:100%">
                                     </div> 
                                     <div class="mySlides">
                                     <div class="numbertext">7 / 8</div>
@@ -137,7 +137,7 @@ include_once("inc/nav.php");
                                         </div>
                                 </div>
                             </div>
-
+                            
 
 
                     <!-- Section Edition --> 
@@ -146,25 +146,25 @@ include_once("inc/nav.php");
                         <h2 id="edition">Edition</h2>
                             <div class="row">               
                                 <div class="col-md-3 col-sm-6 vignettes"> 
-                                    <img class="img-responsive thumbnail" src="img/ed/e1.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                                    <img class="img-responsive thumbnail" src="img/ed/e1.jpg" alt="" style="width:100%" onclick="openModal2();currentSlide(8)" class="hover-shadow cursor">
                                 </div>
                                 <div class="col-md-3 col-sm-6 vignettes"> 
-                                    <img class="img-responsive thumbnail" src="img/ed/e2.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                                    <img class="img-responsive thumbnail" src="img/ed/e2.jpg" alt="" style="width:100%" onclick="openModal2();currentSlide(9)" class="hover-shadow cursor">
                                 </div> 
                                 <div class="col-md-3 col-sm-6 vignettes"> 
-                                    <img class="img-responsive thumbnail" src="img/ed/e3.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+                                    <img class="img-responsive thumbnail" src="img/ed/e3.jpg" alt="" style="width:100%" onclick="openModal2();currentSlide(10)" class="hover-shadow cursor">
                                 </div> 
                                 <div class="col-md-3 col-sm-6 vignettes"> 
-                                    <img class="img-responsive thumbnail" src="img/ed/e4.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                                    <img class="img-responsive thumbnail" src="img/ed/e4.jpg" alt="" style="width:100%" onclick="openModal2();currentSlide(7)" class="hover-shadow cursor">
                                 </div> 
                                 <div class="col-md-3 col-sm-6 vignettes"> 
-                                    <img class="img-responsive thumbnail" src="img/ed/e5.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                                    <img class="img-responsive thumbnail" src="img/ed/e5.jpg" alt="" style="width:100%" onclick="openModal2();currentSlide(7)" class="hover-shadow cursor">
                                 </div> 
                                 <div class="col-md-3 col-sm-6 vignettes"> 
-                                    <img class="img-responsive thumbnail" src="img/ed/e6.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                                    <img class="img-responsive thumbnail" src="img/ed/e6.jpg" alt="" style="width:100%" onclick="openModal2();currentSlide(7)" class="hover-shadow cursor">
                                 </div> 
                                 <div class="col-md-3 col-sm-6 vignettes"> 
-                                    <img class="img-responsive thumbnail" src="img/ed/e7.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                                    <img class="img-responsive thumbnail" src="img/ed/e7.jpg" alt="" style="width:100%" onclick="openModal2();currentSlide(7)" class="hover-shadow cursor">
                                 </div> 
                                 <div class="col-md-3 col-sm-6 vignettes"> 
                                     <img class="img-responsive thumbnail" src="img/ed/e8.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
@@ -194,18 +194,18 @@ include_once("inc/nav.php");
                                     <img class="img-responsive thumbnail" src="img/ed/e16.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
                                 </div> 
                                 <div class="col-md-3 col-sm-6 vignettes"> 
-                                    <img class="img-responsive thumbnail" src="img/ed/e17.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                                    <img class="img-responsive thumbnail" src="img/ed/e17.jpg" alt="" style="width:100%" onclick="openModal2();currentSlide(7)" class="hover-shadow cursor">
                                 </div> 
                                 <div class="col-md-3 col-sm-6 vignettes"> 
-                                    <img class="img-responsive thumbnail" src="img/ed/e18.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                                    <img class="img-responsive thumbnail" src="img/ed/e18.jpg" alt="" style="width:100%" onclick="openModal2();currentSlide(7)" class="hover-shadow cursor">
                                 </div>  
                                 <div class="col-md-3 col-sm-6 vignettes"> 
-                                    <img class="img-responsive thumbnail" src="img/ed/e19.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                                    <img class="img-responsive thumbnail" src="img/ed/e19.jpg" alt="" style="width:100%" onclick="openModal2();currentSlide(7)" class="hover-shadow cursor">
                                 </div> 
                             </div>
 
-                            <div id="myModal" class="modal">
-                                <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div id="myModal2" class="modal">
+                                <span class="close cursor" onclick="closeModal2()">&times;</span>
                                 <div class="modal-content">
 
                                     <div class="mySlides">
@@ -423,7 +423,15 @@ function openModal() {
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
+//TEST
+function openModal2() {
+  document.getElementById('myModal2').style.display = "block";
+}
 
+function closeModal2() {
+  document.getElementById('myModal2').style.display = "none";
+}
+//TEST
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -435,7 +443,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides2(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
