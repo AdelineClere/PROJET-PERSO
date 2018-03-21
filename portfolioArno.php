@@ -81,19 +81,19 @@ include_once("inc/nav.php");
                                     </div>
                                     <div class="mySlides">
                                     <div class="numbertext">2 / 8</div>
-                                    <img src="img/web/w2.jpg" style="width:60%">
+                                    <img src="img/web/w2.jpg" style="width:100%">
                                     </div>
                                     <div class="mySlides">
                                     <div class="numbertext">3 / 8</div>
-                                    <img src="img/web/w3.jpg" style="width:60%">
+                                    <img src="img/web/w3.jpg" style="width:100%">
                                     </div>                                    
                                     <div class="mySlides">
                                     <div class="numbertext">4 / 8</div>
-                                    <img src="img/web/w4.jpg" style="width:60%">
+                                    <img src="img/web/w4.jpg" style="width:100%">
                                     </div>  
                                     <div class="mySlides">
                                     <div class="numbertext">5 / 8</div>
-                                    <img src="img/web/w5.jpg" style="width:60%">
+                                    <img src="img/web/w5.jpg" style="width:100%">
                                     </div> 
                                     <div class="mySlides">
                                     <div class="numbertext">6 / 8</div>
@@ -101,7 +101,7 @@ include_once("inc/nav.php");
                                     </div> 
                                     <div class="mySlides">
                                     <div class="numbertext">7 / 8</div>
-                                    <img src="img/web/w7.jpg" style="width:60%">
+                                    <img src="img/web/w7.jpg" style="width:100%">
                                     </div> 
 
                                     <!-- Next/previous controls -->                              
@@ -163,15 +163,15 @@ include_once("inc/nav.php");
 
                                     <div class="mySlides">
                                     <div class="numbertext">1 / 19</div>
-                                    <img src="img/web/ed1.jpg" style="width:60%">
+                                    <img src="img/ed/e1.jpg" style="width:100%">
                                     </div>
                                     <div class="mySlides">
                                     <div class="numbertext">2 / 19</div>
-                                    <img src="img/web/e2d.jpg" style="width:60%">
+                                    <img src="img/ed/e2.jpg" style="width:100%">
                                     </div>
                                     <div class="mySlides">
                                     <div class="numbertext">3 / 19</div>
-                                    <img src="img/web/ed3.jpg" style="width:60%">
+                                    <img src="img/ed/e3.jpg" style="width:100%">
                                     </div>     
 
                                     <!-- Next/previous controls  -->                               
@@ -185,13 +185,13 @@ include_once("inc/nav.php");
                                                         
                                         <!-- Thumbnail image controls -->
                                         <div class="col-md-3 col-sm-6">
-                                        <img class="demo cursor" src="img/web/ed1.jpg" style="width:60%" onclick="currentSlide2(8)" alt="">
+                                        <img class="demo cursor" src="img/ed/e1.jpg" style="width:60%" onclick="currentSlide2(8)" alt="">
                                         </div>
                                         <div class="col-md-3 col-sm-6">
-                                        <img class="demo cursor" src="img/web/ed2.jpg" style="width:60%" onclick="currentSlide2(9)" alt="">
+                                        <img class="demo cursor" src="img/ed/e2.jpg" style="width:60%" onclick="currentSlide2(9)" alt="">
                                         </div>
                                         <div class="col-md-3 col-sm-6">
-                                        <img class="demo cursor" src="img/web/ed3.jpg" style="width:60%" onclick="currentSlide2(10)" alt="">
+                                        <img class="demo cursor" src="img/ed/e3.jpg" style="width:60%" onclick="currentSlide2(10)" alt="">
                                         </div>
                                         
                                 </div>
@@ -212,26 +212,22 @@ include_once("inc/nav.php");
  <!-- --------------------------------- JS POPUP MODAL -------------------------------------- -->
 
 <script>
-
+// WEB
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
-
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -250,27 +246,22 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-
-
+// EDITION
 function openModal2() {
   document.getElementById('myModal2').style.display = "block";
 }
-
 function closeModal2() {
   document.getElementById('myModal2').style.display = "none";
 }
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides2(n) {
   showSlides(slideIndex += n);
 }
-
 function currentSlide2(n) {
   showSlides(slideIndex = n);
 }
-
 function showSlides2(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
