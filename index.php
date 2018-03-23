@@ -12,7 +12,7 @@ include_once("inc/nav.php");
                     <figure>
                     <img class="animated zoomIn" src="img/header2.png" alt="Profil Adeline Clère" title="adelineClere">
                         <figcaption>
-                            <p><span class="nom_Prenom">Adeline Clère</span><br>0 66 22 99 584 I Ecrivez-moi : <a href="mailto:adeline@clere.me" class="mailTo">adeline@clere.me</a> I www.adeline-clere.fr I <a href="" class="picto_linkedin"><a class="in" href=https://www.linkedin.com/in/adeline-clere/ target="_blank"><i class="fab fa-linkedin-in"></a></i>       
+                            <p><span class="nom_Prenom">Adeline Clère</span><br>0 66 22 99 584 I Ecrivez-moi : <a href="mailto:adeline@clere.me" class="mailTo">adeline@clere.me</a> I www.adeline-clere.fr I <a href="" class="picto_linkedin"><a class="in" href=https://www.linkedin.com/in/adeline-clere/ target="_blank"><i class="fab fa-linkedin-in"></i></a> I <a href=https://github.com/AdelineClere target="_blank"><i class="fab fa-github"></i></a>     
                             </a></p>
                         </figcaption>                          
                         

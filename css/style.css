@@ -191,11 +191,11 @@ footer {
 
 button {
 	position: fixed; 
-	right: 25px;
+	right: 10px;
 	bottom: 25px;
 	background: none;
 	border: 0;
-    font-size: 250%;
+    font-size: 200%;
 	transition: 1s;
     /* cursor: pointer; */
 }
@@ -247,6 +247,7 @@ figcaption p {
 }
 .fa-linkedin-in {
     border: 0;
+/*  vertical-align : baseline;  https://www.zonecss.fr/proprietes-css/vertical-align-css.html*/
 }
 
 .logos {
