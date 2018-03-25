@@ -10,18 +10,14 @@ include_once("inc/nav.php");
             <div class="row">
                 <div class="col-xs-12">
                     <figure>
-                    <img class="animated zoomIn" src="img/header2.png" alt="Profil Adeline Clère" title="adelineClere">
+                    <img class="animated zoomIn" src="img/header3.png" alt="Profil Adeline Clère" title="adelineClere">
                         <figcaption>
                             <p><span class="nom_Prenom">Adeline Clère</span><br>0 66 22 99 584 I Ecrivez-moi : <a href="mailto:adeline@clere.me" class="mailTo">adeline@clere.me</a> I www.adeline-clere.fr I <a href="" class="picto_linkedin"><a class="in" href=https://www.linkedin.com/in/adeline-clere/ target="_blank"><i class="fab fa-linkedin-in"></i></a> I <a href=https://github.com/AdelineClere target="_blank"><i class="fab fa-github"></i></a>     
                             </a></p>
                         </figcaption>                          
                         
-                <!--    <figcaption>
-                            <p>Adeline Clère<br>0 66 22 99 584 | adeline@clere.me" | www.adeline-clere.fr |</p>
-                        </figcaption>   -->
-
-                <!--        <div class="hidden">
-                            <h1>Adeline Clère<br>Graphiste Développeur Intégrateur</h1>
+                <!--    <div class="hidden">
+                            <h1>Adeline Clère<br>Développeur Intégrateur Web & Graphiste</h1>
                         </div>  -->
 
                     </figure>
@@ -31,6 +27,7 @@ include_once("inc/nav.php");
     </section>
         
     <!-- LOGOS -->
+    <div class="container"> 
     <section class="logos">
         <div class="owl-carousel owlCarousel" data-auto-play="1" data-play-speed="1000">
             <div>
@@ -43,10 +40,13 @@ include_once("inc/nav.php");
                 <img src="img/logos/ill.png" alt="" />
             </div>
             <div>
-                <img src="img/logos/css.png" alt="" />
-            </div>
+                <img src="img/logos/responsive.png" alt="" />
+            </div>  
             <div>
                 <img src="img/logos/html.png" alt="" />
+            </div>
+            <div>
+                <img src="img/logos/css.png" alt="" />
             </div>
             <div>
                 <img src="img/logos/boot.png" alt="" />
@@ -71,44 +71,12 @@ include_once("inc/nav.php");
             </div>
             <div>
                 <img src="img/logos/symf.png" alt="" />
-            </div>
-            <div>           
+            </div>                    
         </div>
     </section>
-<!--
-        <section data-section="logo-slider" class="section  section-id-8 section-white client-logos client-logos section--logo-slider no-padding-top no-padding-bottom no-margin-top"><div class="container section-container padding-top-10 padding-bottom-10"<div class="section-inner">	<div class="small-section">
-            <div class="owl-carousel id--client-logos" data-auto-play="1" data-play-speed="1000">
-                <div class="margin">
-                    <img src="img/logos/ind.png" alt=""/>   </div>
-                <div>
-                    <img src="img/logos/phot.png" alt="" />   </div>
-                <div>
-                    <img src="img/logos/ill.png" alt="" />   </div>
-                <div>
-                    <img src="img/logos/css.png" alt="" />   </div>
-                <div>
-                    <img src="img/logos/html.png" alt="" /> 	</div>
-                <div>
-                    <img src="img/logos/boot.png" alt="" />   </div>
-                <div>
-                    <img src="img/logos/js.png" alt="" />   	</div>
-                <div>
-                    <img src="img/logos/jq.png" alt="" />   </div>
-                <div>
-                    <img src="img/logos/sql.png" alt="" />   </div>
-                <div>
-                    <img src="img/logos/wp.png" alt="" />   	</div>
-                <div>
-                    <img src="img/logos/php.png" alt="" />   </div>
-                <div>
-                    <img src="img/logos/symf.png" alt="" />   </div>
-                <div>
-                <div>
-                    <img src="img/logos/symf.png" alt="" />   </div>
-                <div>
-            </div>
-    </section>
--->
+    </div>
+
+    
     <!-- PORTRAIT PARCOURS -->
     <section id="presentation">
         <div class="container">
@@ -137,7 +105,7 @@ include_once("inc/nav.php");
             <div class="pointsForts">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h4>Réactive   I   Efficace   I   Rigoureuse   I   Créative   I   Curieuse   I   Voyageuse   I   Passionnée</h4>
+                        <h4>Réactive   I   Rigoureuse   I   Autonome   I   Créative   I   Curieuse   I   Passionnée</h4>
                     </div>
                 </div>        
             </div>
