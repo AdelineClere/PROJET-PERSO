@@ -1,15 +1,15 @@
 $(function()
 {
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:6,
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items:6,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true
     
-})
+    })
 // $('.play').on('click',function(){
 //     owl.trigger('play.owl.autoplay',[1000])
 // })

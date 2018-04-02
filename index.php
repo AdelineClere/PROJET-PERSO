@@ -93,9 +93,9 @@ include_once("inc/nav.php");
                     </section>
                 </aside>
                 <article class="col-sm-9 col-xs-12 histoire">
-                    <h3 class="laPetiteHistoire">Ma petite histoire…</h3>
-                    <p>Après un Bac Math./Sc. Physiques, des études en Communication d’Entreprise et Culturelle, le goût de la construction, création, détournent mon parcours pour me former en alternance au métier de maquettiste-graphiste. Et aujourd'hui, avide de technique et d'élargir mon champ d'action, me voici développeur et intégrateur web après une formation intensive diplômante et labellisée au sein de l'école <a href="http://www.wf3.fr/" target="_blank">Webforce 3</a> !
-                    <br><em>Pour en savoir plus > </em><a href="http://localhost/PROJET-PERSO/img/cv_adeline_clere.pdf" class="lienCV" target="_blank">téléchargez mon CV</a>
+                <!--    <h3 class="laPetiteHistoire">Ma petite histoire…</h3>   -->
+                    <p>Un Bac Math./Physiq., des études en Communication d’Entreprise puis Culturelle, le besoin de création, de pratiques techniques détournent mon parcours pour me lancer dans l'apprentissage du métier de graphiste. Aujourd'hui, avide d'exploiter l'outil numérique, envie de coder, je m'initie puis me lance comme développeur/intégrateur web après une formation intensive diplômante, labellisée Grande Ecole du Numérique au sein de l'École <a href="http://www.wf3.fr/" target="_blank">Webforce 3</a> ! 
+                    <br><em>Pour en savoir plus : </em><a href="http://localhost/PROJET-PERSO/img/cv_adeline_clere.pdf" class="lienCV" target="_blank">téléchargez mon CV</a>
                     </p>
 
                 

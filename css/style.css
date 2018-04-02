@@ -217,7 +217,7 @@ button :hover{
 
 .projecteur img {
     object-fit: cover;
-    max-width: 30%;
+    max-width: 40%;
     display: block;
     margin: auto;
 }
@@ -295,16 +295,17 @@ h4 {
     position: relative;
     padding: 0;
 }
-.laPetiteHistoire {
+/* .laPetiteHistoire {
     margin: 40px 0 10px 0;
     padding-left: 10px;
     padding-right: 20px;
-}
+}   */
 .histoire p {
     text-align: justify;
     font-size: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    margin: 45px 0 10px 0;
 }
 .lienCV {
     color: rgb(243, 97, 18);
@@ -352,11 +353,13 @@ hr{
 }   
 
 .menuPortfolio {
-    margin: 115px 5px 5px 5px;
+    margin: 115px 0 5px 5px;
     padding: 0;
     list-style-type: none; 
 }
-
+.menuPortfolio li {
+    padding-left: 10px;
+}
 .menuPortfolio a{
     width: 160px;
     font-family: 'Abel', sans-serif;
@@ -379,22 +382,22 @@ hr{
 }
 
 
-
 /***************** PORTFOLIO *******************/
 
-.Barres {
-    margin: 0 0 20px 0;
-}
+.jauge {
+    margin-bottom: 240px; 
+ }
 .progress-bar-warning2 {
-    background-color: #d2d0cd;
+/*    background-color: #d2d1cd;    */
+    background-color: rgba(255, 255, 51);
+
 }
-
-
 .langage {
     text-align: left;
     padding-left: 10px;
     color: #3c3939;
     vertical-align : middle;
+    line-height: 110%;
 }
 
 #Portfolio{
@@ -406,21 +409,38 @@ hr{
 }
 .portfolioEdition {
     padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .portfolioIdentite {
     padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.portfolioMP {
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
 }
 #web {
     padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 #edition {
     padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 #identite {
     padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 #matteP {
     padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /*
 .pWeb {
@@ -439,21 +459,6 @@ hr{
     margin: 0;
     padding: 0 30px 20px 30px;
 }
-
-/***************** MON ŒIL *******************/
-
-.inprogress {
-/*    text-align: center;   */  
-    margin-top: 250px;
-    height: 800px;
-}
-.imgInProgress {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 
 
 /***************** MODAL portfolio *******************/
@@ -498,7 +503,7 @@ hr{
     margin: auto;
     padding: 0;
 /*    width: 90%;   */
-    max-width: 600px;
+    max-width: 800px;
   }
   
   /* The Close Button */
@@ -618,4 +623,42 @@ hr{
     .next a:focus, a:hover {
     color: #878282;
     text-decoration: none;
+    }
+
+
+/***************** MON ŒIL *******************/
+
+.inprogress {
+    /*    text-align: center;   */  
+        margin-top: 250px;
+        height: 800px;
+    }
+    .imgInProgress {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    
+/***************** MEDIAQUERIES *******************/
+
+@media (max-width: 780px){ /* tablette */
+    .menuPortfolio a{
+        width: 120px;
+        font-size: 18px;
+        padding: 35px;
+        border-radius: 70px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 580px){ /* mobile */
+    .menuPortfolio {
+        margin: 70px 5px 5px 5px;
+    }
+    .menuPortfolio a{
+        width: 120px;
+        font-size: 18px;
+        padding: 35px;
+        border-radius: 70px;
+        margin-bottom: 20px;
     }

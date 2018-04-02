@@ -47,64 +47,64 @@ include_once("inc/nav.php");
                         <!--    <p class="pWeb">
                             Intégration HTML 5 / CSS 3 | Responsive Web Design (mobile) | Bootstrap | JavaScript, Jquery | CMS WordPress | Base de données MySQL | PHP procédure et orienté objet | Ajax | Synfonie
                             </p>    -->
-                           
-                            <div class="col-sm-6 col-xs-12">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                    <p class="langage">HTML</p>   
+                            <div class="jauge"> 
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                        <p class="langage">HTML</p>   
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                        <p class="langage">css</p>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                        <p class="langage">Bootstrap</p> 
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <p class="langage">Javascript</p>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <p class="langage">jQuery</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                    <p class="langage">css</p>
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                    <p class="langage">Bootstrap</p> 
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                    <p class="langage">Javascript</p>
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                    <p class="langage">jQuery</p>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="col-sm-6 col-xs-12 ">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                    <p class="langage">Wordpress</p>
+                                <div class="col-sm-6 col-xs-12 ">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                        <p class="langage">Wordpress</p>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <p class="langage">MySql</p>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <p class="langage">PHP + PHPoo</p>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <p class="langage">Ajax</p> 
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                                        <p class="langage">Symfonie</p>
+                                        </div>
+                                        <br>
                                     </div>
                                 </div>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                    <p class="langage">MySql</p>
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                    <p class="langage">PHP + PHPoo</p>
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                    <p class="langage">Ajax</p> 
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                                    <p class="langage">Symfonie</p>
-                                    </div>
-                                    <br>
-                                </div>
-                            </div>
-
+                            </div>  
 
                             <div class="row">
                                 <div class="col-md-3 col-sm-6 vignettes">
@@ -506,7 +506,7 @@ include_once("inc/nav.php");
                     <!-- Section Matte-painting --> 
                     <div class="col-sm-12 portfolioMP">
                     <hr>
-                        <h2 id="identite">Matte-painting</h2>
+                        <h2 id="matteP">Matte-painting</h2>
                             <div class="row" "margeFin">               
                                 <div class="col-md-3 col-sm-6 vignettes"> 
                                     <img class="img-responsive thumbnail" src="img/matte/mp1.jpg" alt="" style="width:100%" onclick="openModal4();currentSlide4(34)" class="hover-shadow cursor">   
