@@ -12,7 +12,7 @@
                 </button>
 
                 <!-- La fée -->
-                <a class="navbar-brand"  href="index.html" class="col-xs-12">
+                <a class="navbar-brand"  href="index.php" class="col-xs-12">
                 <img src="img/fee.jpg" alt="logo-fée" class="logo" aria-hidden="true">
                 </a>
             </div>

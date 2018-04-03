@@ -247,7 +247,6 @@ figcaption p {
 }
 .fa-linkedin-in {
     border: 0;
-/*  vertical-align : baseline;  https://www.zonecss.fr/proprietes-css/vertical-align-css.html*/
 }
 
 .logos {
@@ -400,6 +399,9 @@ hr{
     line-height: 110%;
 }
 
+hr .hrPortfolio {
+    margin: 0 15px 0 15px;
+}
 #Portfolio{
     margin-top: 50px;
     margin-bottom: 70px;
@@ -651,7 +653,15 @@ hr{
         border-radius: 70px;
         margin-bottom: 20px;
     }
-    @media (max-width: 580px){ /* mobile */
+    .nom_Prenom {
+        font-size: 2.5vw;
+    }
+    p .coord {
+        font-size: 15px;
+    }
+
+
+@media (max-width: 580px){ /* mobile */
     .menuPortfolio {
         margin: 70px 5px 5px 5px;
     }
@@ -662,3 +672,4 @@ hr{
         border-radius: 70px;
         margin-bottom: 20px;
     }
+

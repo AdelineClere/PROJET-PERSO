@@ -212,7 +212,7 @@ include_once("inc/nav.php");
 
                     <!-- Section Edition --> 
                     <div class="col-sm-12 portfolioEdition ">
-                    <hr>
+                    <hr class="hrPortfolio">
                     <h2 id="edition">Edition</h2>
                             <div class="row">               
                                 <div class="col-md-3 col-sm-6 vignettes"> 
@@ -425,7 +425,7 @@ include_once("inc/nav.php");
                     </div>
                     <!-- Section Identité --> 
                     <div class="col-sm-12 portfolioIdentite">
-                    <hr>
+                    <hr class="hrPortfolio">
                         <h2 id="identite">Identité</h2>
                             <div class="row" "margeFin">               
                                 <div class="col-md-3 col-sm-6 vignettes"> 
@@ -505,7 +505,7 @@ include_once("inc/nav.php");
                             </div>
                     <!-- Section Matte-painting --> 
                     <div class="col-sm-12 portfolioMP">
-                    <hr>
+                    <hr class="hrPortfolio">
                         <h2 id="matteP">Matte-painting</h2>
                             <div class="row" "margeFin">               
                                 <div class="col-md-3 col-sm-6 vignettes"> 
