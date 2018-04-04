@@ -61,13 +61,13 @@ include_once("inc/nav.php");
                 <img src="img/logos/jq.png" alt="" />
             </div>
             <div>
+                <img src="img/logos/ajax.png" alt="" />
+            </div>
+            <div>
                 <img src="img/logos/sql.png" alt="" />
             </div>
             <div>
                 <img src="img/logos/php.png" alt="" />
-            </div>
-            <div>
-                <img src="img/logos/ajax.png" alt="" />
             </div>
             <div>
                 <img src="img/logos/symf.png" alt="" />

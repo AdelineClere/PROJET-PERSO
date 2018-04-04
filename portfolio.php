@@ -78,7 +78,12 @@ include_once("inc/nav.php");
 
                                 <div class="col-sm-6 col-xs-12 ">
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <p class="langage">Ajax</p> 
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                                         <p class="langage">Wordpress</p>
                                         </div>
                                     </div>
@@ -93,12 +98,7 @@ include_once("inc/nav.php");
                                         </div>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                        <p class="langage">Ajax</p> 
-                                        </div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                                         <p class="langage">Symfonie</p>
                                         </div>
                                         <br>
