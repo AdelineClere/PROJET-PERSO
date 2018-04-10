@@ -387,7 +387,6 @@ hr{
     margin-bottom: 240px; 
  }
 .progress-bar-warning2 {
-/*    background-color: #d2d1cd;    */
     background-color: rgba(255, 255, 51);
 
 }
@@ -444,13 +443,6 @@ hr .hrPortfolio {
     padding-left: 15px;
     padding-right: 15px;
 }
-/*
-.pWeb {
-    font-size: 23px;
-    line-height: 150%;
-    margin-bottom: 30px;
-}
-*/
 .thumbnail {
     padding: 0;
     border: 0;
@@ -645,7 +637,8 @@ hr .hrPortfolio {
     
 /***************** MEDIAQUERIES *******************/
 
-@media (max-width: 780px){ /* tablette */
+/* tablette */
+@media (max-width: 780px){ 
     .menuPortfolio a{
         width: 120px;
         font-size: 18px;
@@ -660,16 +653,15 @@ hr .hrPortfolio {
         font-size: 15px;
     }
 
-
-@media (max-width: 580px){ /* mobile */
+/* mobile */
+@media (max-width: 580px){ 
     .menuPortfolio {
         margin: 70px 5px 5px 5px;
     }
-    .menuPortfolio a{
+    .menuPortfolio a {
         width: 120px;
         font-size: 18px;
         padding: 35px;
         border-radius: 70px;
         margin-bottom: 20px;
     }
-

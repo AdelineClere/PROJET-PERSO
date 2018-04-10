@@ -8,7 +8,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=projet_perso', 'root', 'root', array
 session_start();
 
 //-------------------- ⚠️ CHEMIN
-define('RACINE_SITE', $_SERVER['DOCUMENT_ROOT'] . "/PHP/boutique/");    
+//define('RACINE_SITE', $_SERVER['DOCUMENT_ROOT'] . "/PHP/boutique/");    
 // ⚠️ Cette CONSTANTE retourne le chemin physique du dossier projet-perso sur le serveur
 // (Lors de l'enregistrement d'img/photo, nous aurons besoin du chemin complet du dossier photo pour enregistrer le photo)
 // echo '<pre>'; print_r($_SERVER); echo '</pre>';  => ARRAY du server

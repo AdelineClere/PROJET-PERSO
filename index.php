@@ -10,7 +10,7 @@ include_once("inc/nav.php");
             <div class="row">
                 <div class="col-xs-12">
                     <figure>
-                    <img class="animated zoomIn" src="img/header3.png" alt="Profil Adeline Clère" title="adelineClere">
+                    <img class="animated zoomIn img-responsive" src="img/header3.png" alt="Profil Adeline Clère" title="adelineClere">
                         <figcaption>
                             <p class="coord"><span class="nom_Prenom">Adeline Clère</span><br>0 66 22 99 584 I Ecrivez-moi : <a href="mailto:adeline@clere.me" class="mailTo">adeline@clere.me</a> I www.adeline-clere.fr I <a href="" class="picto_linkedin"><a class="in" href=https://www.linkedin.com/in/adeline-clere/ target="_blank"><i class="fab fa-linkedin-in"></i></a> I <a href=https://github.com/AdelineClere target="_blank"><i class="fab fa-github"></i></a>     
                             </a></p>
@@ -89,16 +89,14 @@ include_once("inc/nav.php");
             <div class="row">  
                 <aside class="col-sm-3"> 
                     <section class="home">
-                        <img class="portrait" src="img/me.png" alt="logo">
+                        <img class="portrait img-responsive" src="img/me.png" alt="logo">
                     </section>
                 </aside>
                 <article class="col-sm-9 col-xs-12 histoire">
                 <!--    <h3 class="laPetiteHistoire">Ma petite histoire…</h3>   -->
-                    <p>Un Bac Math./Physiq., des études en Communication d’Entreprise puis Culturelle, le besoin de création, de pratiques techniques détournent mon parcours pour me lancer dans l'apprentissage du métier de graphiste. Aujourd'hui, avide d'exploiter l'outil numérique, envie de coder, je m'initie puis me lance comme développeur/intégrateur web après une formation intensive diplômante, labellisée Grande Ecole du Numérique au sein de l'École <a href="http://www.wf3.fr/" target="_blank">Webforce 3</a> ! 
+                    <p>Un Bac Math./Physiq., des études en Communication d’Entreprise puis Culturelle, le besoin de création et l'envie d'exploiter l'outil informatique détournent mon parcours pour me lancer dans l'apprentissage du métier de graphiste. Aujourd'hui avide d'exploiter l'univers numérique et l'envie de coder m'entraînent vers le développement et l'intégration web, en autodidact et après une formation intensive diplômante, labellisée Grande Ecole du Numérique au sein de l'École <a href="http://www.wf3.fr/" target="_blank">Webforce 3</a> ! 
                     <br><em>Pour en savoir plus : </em><a href="http://localhost/PROJET-PERSO/img/cv_adeline_clere.pdf" class="lienCV" target="_blank">téléchargez mon CV</a>
-                    </p>
-
-                
+                    </p> 
                 </article>
             </div>
             <hr>

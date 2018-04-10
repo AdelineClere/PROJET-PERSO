@@ -8,7 +8,7 @@
         <title>My Web Wf3</title>
         
         <!-- Description de la page -->
-        <meta name="description" content="Projet perso">
+        <meta name="Adeline Clère" content="Développeur Intégrateur Web + Graphiste">
 
         <!-- Pour Internet Explorer : S'assurer qu'il utilise la dernière version du moteur de rendu -->
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
