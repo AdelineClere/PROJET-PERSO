@@ -15,7 +15,7 @@ session_start();
 // 
 // ⚠️  echo RACINE_SITE;   // -> donne chemin pour pointer vers photo
 
-define("URL", 'http://localhost/PROJET-PERSO/'); // c'est l'URL qu'on conserve ds BDD
+// define("URL", 'http://localhost/PROJET-PERSO/'); // c'est l'URL qu'on conserve ds BDD
 // ⚠️  Cette CONSTANTE servira à enregistrer l'URL d'une photo/img ds la BDD, on ne conserve jamais photo elle-même ds BDD, ce serait trop lourd pour la BDD.
 
 //-------------------- ⚠️ VARIABLES

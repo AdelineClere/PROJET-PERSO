@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         
         <!-- Titre de la page -->
-        <title>My Web Wf3</title>
+        <title>Adeline Clère Développeur Intégrateur Web</title>
         
         <!-- Description de la page -->
         <meta name="Adeline Clère" content="Développeur Intégrateur Web + Graphiste">
@@ -36,18 +36,17 @@
         
         <!-- FontAwesome CSS -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-        <link rel="stylesheet" href="<?= URL ?>css/fontawesome/web-fonts-with-css/css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/fontawesome/web-fonts-with-css/css/fontawesome.min.css">
 
         <!-- Animate CSS -->
-        <link rel="stylesheet" href="<?= URL ?>css/animate.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
        
         <!-- OWL.CAROUSEL garder les 2 ??? -->
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.carousel.min.css'/>
 <!--        <script rel="stylesheet" src=https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.carousel.css></script>
 -->    
         <!--  CSS -->
-        <link href="<?= URL ?>css/style.css" rel="stylesheet">
-                <!-- ⚠️  balise php pr appeler constante URL ds l'URL pour donner chemin à fichiers du dossier admin -->
+        <link href="css/style.css" rel="stylesheet">
 
         <!-- HTML 5 Shiv -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>

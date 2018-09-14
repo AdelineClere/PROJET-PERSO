@@ -25,7 +25,7 @@ include_once("inc/nav.php");
                                         <li><a href="#identite">Identité<br>-</a></li>
                                     </div>
                                     <div class="col-sm-3 col-xs-6 col"> 
-                                        <li><a href="#matteP">Matte-<br>painting</a></li>
+                                        <li><a href="#matteP"> Matte-<br>painting</a></li>
                                     </div>
                                 </div>
                             </ul>  
@@ -50,27 +50,27 @@ include_once("inc/nav.php");
                             <div class="jauge"> 
                                 <div class="col-sm-6 col-xs-12">
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                                         <p class="langage">HTML</p>   
                                         </div>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                                         <p class="langage">css</p>
                                         </div>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
                                         <p class="langage">Bootstrap</p> 
                                         </div>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
                                         <p class="langage">Javascript</p>
                                         </div>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
                                         <p class="langage">jQuery</p>
                                         </div>
                                     </div>
@@ -78,27 +78,27 @@ include_once("inc/nav.php");
 
                                 <div class="col-sm-6 col-xs-12 ">
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
                                         <p class="langage">Ajax</p> 
                                         </div>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
                                         <p class="langage">Wordpress</p>
                                         </div>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
                                         <p class="langage">MySql</p>
                                         </div>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                                         <p class="langage">PHP + PHPoo</p>
                                         </div>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <div class="progress-bar progress-bar-warning2" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
                                         <p class="langage">Symfonie</p>
                                         </div>
                                         <br>
@@ -445,7 +445,10 @@ include_once("inc/nav.php");
                                 </div> 
                                 <div class="col-md-3 col-sm-6 vignettes"> 
                                     <img class="img-responsive thumbnail" src="img/identite/i6.jpg" alt="" style="width:100%" onclick="openModal3();currentSlide3(33)" class="hover-shadow cursor">   
-                                </div>                                    
+                                </div>  
+                                <div class="col-md-3 col-sm-6 vignettes"> 
+                                    <img class="img-responsive thumbnail" src="img/identite/i7.jpg" alt="" style="width:100%" onclick="openModal3();currentSlide3(34)" class="hover-shadow cursor">   
+                                </div>                                   
                             </div>
                          <!-- The Modal/Lightbox -->
                          <div id="myModal3" class="modal">
@@ -475,6 +478,11 @@ include_once("inc/nav.php");
                                     <div class="numbertext"></div>
                                     <img src="img/identite/i6.jpg" style="width:100%">
                                     </div>                                    
+                                    </div>
+                                    <div class="mySlides">
+                                    <div class="numbertext"></div>
+                                    <img src="img/identite/i7.jpg" style="width:100%">
+                                    </div>                                    
                                     <!-- Next/previous controls -->                              
                                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -500,6 +508,9 @@ include_once("inc/nav.php");
                                         </div>
                                         <div class="col-md-3 col-sm-6">
                                         <img class="demo cursor" src="img/identite/i6.jpg" style="width:60%" onclick="currentSlide3(33)" alt="">
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                        <img class="demo cursor" src="img/identite/i7.jpg" style="width:60%" onclick="currentSlide3(34)" alt="">
                                         </div>
                                 </div>
                             </div>

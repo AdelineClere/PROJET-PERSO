@@ -330,7 +330,7 @@ hr{
 
 .parallax { 
     /* The image used */
-    background-image: url("../img/parallax/fond5.jpg");
+    background-image: url(../img/parallax/fond5.jpg);
 
     /* Set a specific height */
     height: 400px;    
@@ -531,16 +531,15 @@ hr .hrPortfolio {
     font-size: 18px;
     margin: 15px 0 30px 0;
   }
-                #caption2 {
-                    font-family: 'Abel', sans-serif;
-                    color: #fff;
-                    font-size: 18px;
-                    margin: 15px 0 30px 0;
-                }
+    #caption2 {
+        font-family: 'Abel', sans-serif;
+        color: #fff;
+        font-size: 18px;
+        margin: 15px 0 30px 0;
+    }
 
   /* Next & previous buttons */
-  .prev,
-  .next {
+  .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -578,9 +577,9 @@ hr .hrPortfolio {
     top: 0;
   }
   
-  img {
+  /* .img {
   /*  margin-bottom: -4px;  */
-  }
+
   
   .caption-container {
     text-align: center;
@@ -652,6 +651,7 @@ hr .hrPortfolio {
     p .coord {
         font-size: 15px;
     }
+}    
 
 /* mobile */
 @media (max-width: 580px){ 
@@ -665,3 +665,4 @@ hr .hrPortfolio {
         border-radius: 70px;
         margin-bottom: 20px;
     }
+}

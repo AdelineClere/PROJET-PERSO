@@ -38,7 +38,7 @@ include_once("inc/nav.php");
             </div>
             <div>
                 <img src="img/logos/ill.png" alt="" />
-            </div>
+            </div>          
             <div>
                 <img src="img/logos/responsive.png" alt="" />
             </div>  
@@ -94,8 +94,8 @@ include_once("inc/nav.php");
                 </aside>
                 <article class="col-sm-9 col-xs-12 histoire">
                 <!--    <h3 class="laPetiteHistoire">Ma petite histoire…</h3>   -->
-                    <p>Un Bac Math./Physiq., des études en Communication d’Entreprise puis Culturelle, le besoin de création et l'envie d'exploiter l'outil informatique détournent mon parcours pour me lancer dans l'apprentissage du métier de graphiste. Aujourd'hui avide d'exploiter l'univers numérique et l'envie de coder m'entraînent vers le développement et l'intégration web, en autodidact et après une formation intensive diplômante, labellisée Grande Ecole du Numérique au sein de l'École <a href="http://www.wf3.fr/" target="_blank">Webforce 3</a> ! 
-                    <br><em>Pour en savoir plus : </em><a href="http://localhost/PROJET-PERSO/img/cv_adeline_clere.pdf" class="lienCV" target="_blank">téléchargez mon CV</a>
+                    <p>Un Bac Math./Physiq., des études en Communication d’Entreprise puis Culturelle, le besoin de création et l'envie d'exploiter l'outil informatique détournent mon parcours pour me lancer dans l'apprentissage du métier de graphiste. Aujourd'hui avide d'exploiter l'univers numérique et l'envie de coder m'entraînent vers le développement et l'intégration web, en autodidacte et après une formation intensive diplômante au sein de l'École <a href="http://www.wf3.fr/" target="_blank">Webforce 3</a>, labellisée Grande Ecole du Numérique ! 
+                    <br><em>Pour en savoir plus : </em><a href="img/cv_adeline-clere.pdf" class="lienCV" target="_blank">téléchargez mon CV</a>
                     </p> 
                 </article>
             </div>
